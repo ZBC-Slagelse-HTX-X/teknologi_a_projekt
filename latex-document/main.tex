@@ -24,6 +24,12 @@
 \usepackage{mdframed}
 \usepackage{xcolor}
 \usepackage[bottom]{footmisc}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\renewcommand{\arraystretch}{1.25}
+
 \onehalfspacing
 % Appendix, attachments management
 \usepackage[toc,page]{appendix} %
@@ -35,7 +41,6 @@
     \usepackage{ifthen}
     \usepackage{calc}
 \addbibresource{bibliography.bib}
-
 
 % Configure hyperref for proper citation links
 \hypersetup{
@@ -57,5 +62,28 @@
 
 %% Start af dokumentet
 \begin{document}
-    Hello, world!
+    \input{chapters/forside.tex}
+    \newpage
+    \section*{Titelblad}
+    \input{chapters/titelblad.tex}
+    \newpage
+    \section*{Abstract}
+    \input{chapters/abstract.tex}
+    \newpage
+    \section*{Forord}
+    \input{chapters/forord.tex}
+    \newpage
+    \tableofcontents
+    \newpage
+    \section{Problemanalyse}
+    \input{chapters/problemanalyse.tex}
+
+    \newpage
+    \section{Problemidentifikation}
+    \input{chapters/problemidentifikation.tex}
+    
+    % Bibliografi
+    \newpage
+    \nocite{*}
+    \printbibliography[heading=bibintoc,title={Litteraturliste}]
 \end{document}
