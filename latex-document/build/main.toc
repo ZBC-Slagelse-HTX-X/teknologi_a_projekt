@@ -6,6 +6,10 @@
 \contentsline {section}{\numberline {2}Problemanalyse}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Økonomiske udfordringer i samfundet}{9}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Subscription fatigue}{9}{subsection.2.2}%
-\contentsline {section}{Litteraturliste}{10}{section*.5}%
-\contentsline {section}{Appendiks}{11}{section*.6}%
-\contentsline {section}{\numberline {A}Appendiks}{11}{appendix.1.A}%
+\contentsline {section}{\numberline {3}Produktprincip}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Målgruppe}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Produktskitse}{10}{subsection.3.2}%
+\contentsline {section}{Litteraturliste}{11}{section*.5}%
+\contentsline {section}{Appendiks}{12}{section*.6}%
+\contentsline {section}{\numberline {A}Appendiks}{12}{appendix.1.A}%
+\contentsline {section}{\numberline {B}Første skitse af applikation}{13}{appendix.1.B}%

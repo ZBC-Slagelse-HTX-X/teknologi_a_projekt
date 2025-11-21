@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.8.25)  7 NOV 2025 09:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.11.10)  21 NOV 2025 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -898,7 +898,15 @@ Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 \everycr=\toks44
 \minrowclearance=\skip168
 \rownum=\count480
-) (/usr/share/texmf-dist/tex/latex/appendix/appendix.sty
+) (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (/usr/share/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
 \c@@pps=\count481
 \c@@ppsavesec=\count482
@@ -937,35 +945,35 @@ File: pppdftex.def 2025/01/30 v0.6e Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count489
 \AM@templatesizebox=\box82
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 57.
+Package hyperref Info: Option `colorlinks' set `true' on input line 58.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'danish'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 64.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 65.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (build/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count490
@@ -985,7 +993,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 64.
+Package hyperref Info: Link coloring ON on input line 65.
  (build/main.out) (build/main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
@@ -1041,17 +1049,9 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (build/main.bbl)
-Package biblatex Info: Reference section=0 on input line 64.
-Package biblatex Info: Reference segment=0 on input line 64.
- (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
- (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
-Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
- (/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)) (./chapters/forside.tex
+Package biblatex Info: Reference section=0 on input line 65.
+Package biblatex Info: Reference segment=0 on input line 65.
+ (./chapters/forside.tex
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -1133,7 +1133,7 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 29--42
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69     \newpage
+l.70     \newpage
                   [1] (./chapters/abstract.tex)
 
 [2] (./chapters/forord.tex)
@@ -1147,14 +1147,19 @@ l.69     \newpage
 [4] (./chapters/indledning.tex
 
 [5]
-<assets/problemtræ_udkast.png, id=90, 964.60374pt x 815.045pt>
+<assets/problemtræ_udkast.png, id=110, 964.60374pt x 815.045pt>
 File: assets/problemtræ_udkast.png Graphic file (type png)
 <use assets/problemtræ_udkast.png>
 Package pdftex.def Info: assets/problemtræ_udkast.png  used on input line 22.
-(pdftex.def)             Requested size: 430.00462pt x 363.33437pt.
+(pdftex.def)             Requested size: 423.00462pt x 357.41455pt.
 
 
-[6 <./assets/problemtræ_udkast.png (PNG copy)>])
+[6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.39 
+      <./assets/problemtræ_udkast.png (PNG copy)>])
 
 [7] (./chapters/problemanalyse.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1172,12 +1177,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has 
 l.52 
      ])
 
-[9]
+[9] (./chapters/produktprincip.tex)
 
-[10] (./chapters/appendiks.tex)
+[10]
 
-[11]
-runsystem(latexminted cleantemp  --timestamp 20251107095518 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+[11] (./chapters/appendiks.tex
+
+[12]
+<../latex-document/assets/skitse_af_app.png, id=160, 1241.63875pt x 848.16875pt>
+File: ../latex-document/assets/skitse_af_app.png Graphic file (type png)
+<use ../latex-document/assets/skitse_af_app.png>
+Package pdftex.def Info: ../latex-document/assets/skitse_af_app.png  used on input line 4.
+(pdftex.def)             Requested size: 544.92926pt x 372.23769pt.
+
+
+[13
+
+ <../latex-document/assets/skitse_af_app.png>])
+runsystem(latexminted cleantemp  --timestamp 20251121100611 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
 
  (build/main.aux)
  ***********
@@ -1185,16 +1202,16 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 07A4D58B6BB6DD7235571A23067771E9;1334.
+(rerunfilecheck)             Checksum: 74F444299F7B3748170715D4513901FC;1876.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27492 strings out of 474047
- 520650 string characters out of 5740381
- 1273343 words of memory out of 5000000
- 50205 multiletter control sequences out of 15000+600000
+ 27524 strings out of 474047
+ 521472 string characters out of 5740380
+ 1274251 words of memory out of 5000000
+ 50227 multiletter control sequences out of 15000+600000
  628928 words of font info for 85 fonts, out of 8000000 for 9000
  600 hyphenation exceptions out of 8191
  75i,12n,81p,1937b,1788s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1205,10 +1222,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on build/main.pdf (12 pages, 369527 bytes).
+Output written on build/main.pdf (14 pages, 541866 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 222 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

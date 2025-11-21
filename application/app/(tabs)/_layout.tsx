@@ -169,7 +169,6 @@ export default function TabLayout() {
 const styles = StyleSheet.create({
   container: { flex: 1 },
 
-  // Floating pill-style tab bar
   floatingTabBar: {
     position: 'absolute',
     left: 0,
@@ -186,15 +185,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
-    // paddingVertical: 10,
   },
 
   tabItem: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    // paddingVertical: 8,
-    // marginHorizontal: 8,
   },
 
   tabItemActive: {
@@ -205,7 +201,6 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
 
-  // Centered text style
   tabText: {
     fontSize: 14,
     fontWeight: '600',
