@@ -6,6 +6,8 @@ import { BlurView } from 'expo-blur';
 import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Ionicons } from "@expo/vector-icons";
+
 
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>['name'];
@@ -110,12 +112,16 @@ export default function TabLayout() {
           options={{
             title: 'Home',
             tabBarIcon: ({ focused }) => (
-              <Text style={[
-                styles.tabText,
-                { color: focused ? tintColor : '#8e8e93' }
-              ]}>
-                Home
-              </Text>
+              <View style={styles.tabContent}>
+                <Text
+                  style={[
+                    styles.tabText,
+                    { color: focused ? tintColor : '#8e8e93' },
+                  ]}
+                >
+                  Home
+                </Text>
+              </View>
             ),
           }}
         />
@@ -124,12 +130,16 @@ export default function TabLayout() {
           options={{
             title: 'Edit',
             tabBarIcon: ({ focused }) => (
-              <Text style={[
-                styles.tabText,
-                { color: focused ? tintColor : '#8e8e93' }
-              ]}>
-                Edit
-              </Text>
+              <View style={styles.tabContent}>
+                <Text
+                  style={[
+                    styles.tabText,
+                    { color: focused ? tintColor : '#8e8e93' },
+                  ]}
+                >
+                  Edit
+                </Text>
+              </View>
             ),
           }}
         />
@@ -138,12 +148,16 @@ export default function TabLayout() {
           options={{
             title: 'Data',
             tabBarIcon: ({ focused }) => (
-              <Text style={[
-                styles.tabText,
-                { color: focused ? tintColor : '#8e8e93' }
-              ]}>
-                Data
-              </Text>
+              <View style={styles.tabContent}>
+                <Text
+                  style={[
+                    styles.tabText,
+                    { color: focused ? tintColor : '#8e8e93' },
+                  ]}
+                >
+                  Data
+                </Text>
+              </View>
             ),
           }}
         />
@@ -152,12 +166,21 @@ export default function TabLayout() {
           options={{
             title: 'Profile',
             tabBarIcon: ({ focused }) => (
-              <Text style={[
-                styles.tabText,
-                { color: focused ? tintColor : '#8e8e93' }
-              ]}>
-                Profile
-              </Text>
+              <View style={[styles.tabContent, styles.tabContentWithIcon]}>
+                <Text
+                  style={[
+                    styles.tabText,
+                    { color: focused ? tintColor : '#8e8e93' },
+                  ]}
+                >
+                  Profile
+                </Text>
+                <Ionicons
+                  name="person-circle-outline"
+                  size={20}
+                  color={focused ? tintColor : '#8e8e93'}
+                />
+              </View>
             ),
           }}
         />
@@ -167,7 +190,9 @@ export default function TabLayout() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1 },
+  container: { 
+    flex: 1 
+  },
 
   floatingTabBar: {
     position: 'absolute',
@@ -183,8 +208,8 @@ const styles = StyleSheet.create({
 
   tabBarInner: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
+    alignItems: 'stretch',
+    width: '100%',
   },
 
   tabItem: {
@@ -201,11 +226,20 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
 
+  tabContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 13,
+    paddingHorizontal: 8,
+  },
+  tabContentWithIcon: {
+    gap: 6,
+  },
   tabText: {
     fontSize: 14,
     fontWeight: '600',
     letterSpacing: 0.3,
     textAlign: 'center',
-    padding:13,
   },
 });
