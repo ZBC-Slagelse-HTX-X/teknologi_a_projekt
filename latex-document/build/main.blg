@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2026/dev/Arch Linux)
+This is BibTeX, Version 0.99e (TeX Live 2026/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: biblatex.bst
@@ -19,47 +19,49 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
-Biblatex version: 3.20
+Warning--I didn't find a database entry for "LifeCycleGreenhouseGas2021"
+Biblatex version: 3.21
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 3 entries,
+You've used 4 entries,
             6402 wiz_defined-function locations,
-            1217 strings with 9498 characters,
-and the built_in function-call counts, 22702 in all, are:
-= -- 1901
-> -- 308
-< -- 58
-+ -- 734
-- -- 124
-* -- 1588
-:= -- 2992
+            1231 strings with 10908 characters,
+and the built_in function-call counts, 36976 in all, are:
+= -- 3197
+> -- 426
+< -- 81
++ -- 1232
+- -- 177
+* -- 2653
+:= -- 4844
 add.period$ -- 0
-call.type$ -- 3
-change.case$ -- 19
+call.type$ -- 4
+change.case$ -- 29
 chr.to.int$ -- 48
-cite$ -- 4
-duplicate$ -- 2272
-empty$ -- 1875
-format.name$ -- 169
-if$ -- 4446
+cite$ -- 6
+duplicate$ -- 3829
+empty$ -- 3039
+format.name$ -- 271
+if$ -- 7155
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 6
 missing$ -- 0
-newline$ -- 102
-num.names$ -- 82
-pop$ -- 835
+newline$ -- 166
+num.names$ -- 123
+pop$ -- 1260
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 58
 quote$ -- 0
-skip$ -- 427
+skip$ -- 596
 stack$ -- 0
-substring$ -- 3668
-swap$ -- 340
-text.length$ -- 81
-text.prefix$ -- 2
+substring$ -- 6185
+swap$ -- 563
+text.length$ -- 109
+text.prefix$ -- 3
 top$ -- 1
-type$ -- 90
+type$ -- 124
 warning$ -- 0
-while$ -- 392
+while$ -- 627
 width$ -- 0
-write$ -- 100
+write$ -- 163
+(There was 1 warning)

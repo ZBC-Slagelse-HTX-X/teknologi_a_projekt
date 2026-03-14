@@ -21,6 +21,7 @@ export default function TabLayout() {
   const insets = useSafeAreaInsets();
 
   const tintColor = Colors[colorScheme ?? 'light'].tint;
+  const tabBarHeight = 60; // custom tab bar height
 
   return (
     <View style={styles.container}>
@@ -190,8 +191,8 @@ export default function TabLayout() {
 }
 
 const styles = StyleSheet.create({
-  container: { 
-    flex: 1 
+  container: {
+    flex: 1
   },
 
   floatingTabBar: {

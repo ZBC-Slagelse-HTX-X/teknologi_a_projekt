@@ -17,6 +17,70 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global/global}
+  \entry{ASLAN2025111637}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=AT}{%
+         family={Aslan},
+         familyi={A\bibinitperiod},
+         given={Tuğana},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Holzapfel},
+         familyi={H\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Stobbe},
+         familyi={S\bibinitperiod},
+         given={Lutz},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Grimm},
+         familyi={G\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NNF}{%
+         family={Nissen},
+         familyi={N\bibinitperiod},
+         given={Nils\bibnamedelima F.},
+         giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Finkbeiner},
+         familyi={F\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Information systems, Energy sustainability, Energy systems, Energy Modelling}
+    \strng{namehash}{AT+1}
+    \strng{fullhash}{ATHPSLGANNFFM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Summary The climate impact of data centers is expected to increase due to rising demand for information and communication technology services. At the same time, the European Union aims for climate neutral data centers by 2030. To map potential developments of emissions associated with data centers to the year 2030, we develop a generic data center greenhouse gas (GHG) inventory in accordance with the GHG protocol. Our results show that climate neutrality cannot be achieved by reduction measures only. We predict an increase in energy use for our illustrative Germany-based data center by 20%, and an increase in the overall carbon footprint by 13% between 2020 and 2030. Although operational measures and increased use of renewable electricity can decrease GHG emissions over the 2020 level by up to 70%, achieving net zero inevitably requires mechanisms to mitigate and compensate emissions across the value chain.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.isci.2024.111637
+    \endverb
+    \field{issn}{2589-0042}
+    \field{number}{1}
+    \field{pages}{111637}
+    \field{title}{Toward climate neutral data centers: Greenhouse gas inventory, scenarios, and strategies}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S2589004224028645
+    \endverb
+    \field{volume}{28}
+    \field{journaltitle}{iScience}
+    \field{year}{2025}
+  \endentry
+
   \entry{SubscriptionEconomy2024}{article}{}{}
     \name{author}{2}{}{%
       {{hash=CP}{%
