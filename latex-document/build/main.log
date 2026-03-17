@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.10)  13 MAR 2026 15:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.3.10)  16 MAR 2026 15:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1050,7 +1050,13 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (build/main.bbl)
+ (build/main.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Damhus2017':
+(biblatex)                - Invalid format of field 'month'.
+
+)
 Package biblatex Info: Reference section=0 on input line 65.
 Package biblatex Info: Reference segment=0 on input line 65.
  (./chapters/forside.tex
@@ -1132,67 +1138,115 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.70     \newpage
-                  [1] (./chapters/abstract.tex) [2] (./chapters/forord.tex) [3] (build/main.toc)
+                  [1] (./chapters/abstract.tex) [2] (./chapters/forord.tex) [3] (build/main.toc [4])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [4] (./chapters/indledning.tex [5]
-<assets/problemtræ_udkast.png, id=181, 964.60374pt x 815.045pt>
+ [5] (./chapters/indledning.tex [6]
+<assets/problemtræ_udkast.png, id=211, 964.60374pt x 815.045pt>
 File: assets/problemtræ_udkast.png Graphic file (type png)
 <use assets/problemtræ_udkast.png>
 Package pdftex.def Info: assets/problemtræ_udkast.png  used on input line 22.
 (pdftex.def)             Requested size: 423.00462pt x 357.41455pt.
- [6
+ [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.39 
-      <./assets/problemtræ_udkast.png (PNG copy)>]) [7] (./chapters/problemanalyse.tex
+      <./assets/problemtræ_udkast.png (PNG copy)>])
+Overfull \hbox (30.1034pt too wide) in paragraph at lines 48--81
+\T1/lmr/m/n/12 Linket til repo-si-tory: [][]$\T1/lmtt/m/n/12 https : / / github . com / ZBC-[]Slagelse-[]HTX-[]X / teknologi _ a _ projekt$[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--81
+
+ []
+
+[8] (./chapters/problemanalyse.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 14.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 14.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 14.
- [8] [9{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}
+ [9] [10{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.82 \subsection
-                {Subscription fatigue}]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 92.
- (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [10{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) [11] (./chapters/produktprincip.tex [12]) [13] (./chapters/produktideer.tex) [14] (./chapters/proiduktudvikling.tex
-<assets/trinvis_forbedring.png, id=236, 360.59718pt x 114.4275pt>
-File: assets/trinvis_forbedring.png Graphic file (type png)
-<use assets/trinvis_forbedring.png>
-Package pdftex.def Info: assets/trinvis_forbedring.png  used on input line 18.
-(pdftex.def)             Requested size: 215.0023pt x 68.22575pt.
-) [15
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.99     \newpage
-                  <./assets/trinvis_forbedring.png>] [16] (./chapters/miljø_overvejelser.tex
+                {Subscription fatigue}]) [11] (./chapters/produktprincip.tex [12]) [13] (./chapters/produktideer.tex
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\T1/lmr/m/n/10.95 Router-overv�gning (via
+ []
 
-LaTeX Warning: Citation 'LifeCycleGreenhouseGas2021' on page 17 undefined on input line 23.
 
-) [17
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\T1/lmr/m/n/10.95 Data fra al-le hjemme-
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 15--15
+[]|\T1/lmr/m/n/10.95 Kr�ver hardwa-re + app
+ []
+
+) [14
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
+l.95     \newpage
+                 ] (./chapters/produktudformning.tex
+<assets/trinvis_forbedring.png, id=273, 360.59718pt x 114.4275pt>
+File: assets/trinvis_forbedring.png Graphic file (type png)
+<use assets/trinvis_forbedring.png>
+Package pdftex.def Info: assets/trinvis_forbedring.png  used on input line 8.
+(pdftex.def)             Requested size: 215.0023pt x 68.22575pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+[15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.25 \subsubsection
+                   {Brugergrænseflade (Frontend)} <./assets/trinvis_forbedring.png>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 29.
+ (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<assets/proto_1_home.png, id=287, 431.6125pt x 935.495pt>
+File: assets/proto_1_home.png Graphic file (type png)
+<use assets/proto_1_home.png>
+Package pdftex.def Info: assets/proto_1_home.png  used on input line 46.
+(pdftex.def)             Requested size: 215.0023pt x 466.00485pt.
+ [16{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) [17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.99     \newpage
+                  <./assets/proto_1_home.png>] (./chapters/miljø_overvejelser.tex
+
+LaTeX Warning: Citation 'LifeCycleGreenhouseGas2021' on page 18 undefined on input line 23.
+
+) [18
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
 l.103     \newpage
-                  ] [18] (./chapters/marketing.tex [19]) [20] [21] (./chapters/appendiks.tex [22]
-<../latex-document/assets/skitse_af_app.png, id=286, 1241.63875pt x 848.16875pt>
+                  ] [19] (./chapters/marketing.tex [20]) [21] [22] (./chapters/appendiks.tex [23]
+<../latex-document/assets/skitse_af_app.png, id=337, 1241.63875pt x 848.16875pt>
 File: ../latex-document/assets/skitse_af_app.png Graphic file (type png)
 <use ../latex-document/assets/skitse_af_app.png>
-Package pdftex.def Info: ../latex-document/assets/skitse_af_app.png  used on input line 4.
+Package pdftex.def Info: ../latex-document/assets/skitse_af_app.png  used on input line 5.
 (pdftex.def)             Requested size: 544.92926pt x 372.23769pt.
- [23
+ [24
 
- <../latex-document/assets/skitse_af_app.png>])
-runsystem(latexminted cleantemp  --timestamp 20260313154716 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+ <../latex-document/assets/skitse_af_app.png>] [25
+
+]) [26]
+runsystem(latexminted cleantemp  --timestamp 20260316153452 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
 
  (build/main.aux)
  ***********
@@ -1204,7 +1258,7 @@ L3 programming layer <2026-01-19>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 87DD9D84872E6505391A2EB99D278E7E;3804.
+(rerunfilecheck)             Checksum: CACE571A7D1E9217003FD98FE98EDD63;5204.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                main
@@ -1215,13 +1269,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27912 strings out of 468391
- 531583 string characters out of 5444093
- 1302105 words of memory out of 5000000
- 56226 multiletter control sequences out of 15000+600000
- 701182 words of font info for 91 fonts, out of 8000000 for 9000
+ 27967 strings out of 468391
+ 532554 string characters out of 5444093
+ 1303332 words of memory out of 5000000
+ 56258 multiletter control sequences out of 15000+600000
+ 714294 words of font info for 100 fonts, out of 8000000 for 9000
  600 hyphenation exceptions out of 8191
- 75i,12n,81p,1937b,1796s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,81p,1937b,2245s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
 
@@ -1234,11 +1294,11 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
-</usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on build/main.pdf (24 pages, 583503 bytes).
+</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on build/main.pdf (27 pages, 635462 bytes).
 PDF statistics:
- 357 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 70 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 364 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

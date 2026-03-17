@@ -1,25 +1,39 @@
 \subsection{Brainstorm over mulige produktideer}
 
-
 \begin{table}[H]
 \centering
-\label{tab:tabel_2}
-\begin{tabularx}{\textwidth}{
-    >{\raggedright\arraybackslash}X   % first column: left aligned flexible
-    >{\centering\arraybackslash}m{3cm} % second column: centered fixed width
-    >{\centering\arraybackslash}m{3cm} % third column: centered fixed width
-    >{\raggedright\arraybackslash}X   % last column: flexible again
-    }
+\small
+\label{tab:produktideer}
+\begin{tabularx}{\textwidth}{XXX}
     \toprule
-    \rowcolor{gray!15}
-    \textbf{Idéer} & 
-    \textbf{Fordele} & 
-    \textbf{Ulemper} & 
+    \textbf{Idé} & \textbf{Fordele} & \textbf{Ulemper} \\
     \midrule
-    Bank-integration & automatiseret betalinger & 12\% & meget svært at implementere \\
-    Router-overvågning & kan indsamle data fra alle på hjemmenettet (TV, smart-devices, mv.) & kræver hardware, og vil stadig kræve en app til tracking, når man ikke bruger hjememnettet (Meget omfattene)\\
-    Mobilapp & kan indsamle data fra mobilens indbyggede statistiksystem & kan ikke måle andet end mobilforbrug
+    Bank-integration (via app)     & Automatiserede betalinger                  & Meget svært at implementere \\
+    Router-overvågning (via app og enhed)   & Data fra alle hjemme-enheder               & Kræver hardware + app udenfor netværk \\
+    Mobilapp (via statistik)             & Bruger mobilens indbyggede statistik       & Kun mobilforbrug synligt \\
     \bottomrule
 \end{tabularx}
-    \caption{Tabel over mulige produktideer, deres fordele og ulemper}
+\caption{Mulige produktidéer – oversigt}
 \end{table}
+
+
+Brainsormen over de mulige produktideer har ført os til tre overordnede koncepter en app med bank-integration, en fysisk enhed som overvåger dataforbrug i hjemmet, og en mobilapp der bruger mobilens indbyggede statistik til at analysere forburg. 
+
+For at udvælge det bedste koncept, opstiller vi en kravmatrix, hvor vi opstiller kriterier for vores endelige produkt, og vægter dem i forhold til hinanden. Kravene i en kravmatrix er vægtet i forhold til deres vigtighed og betydning for produktets succes. Kravene er ligeledes opdelt i funktionelle og ikke-funktionelle(dvs. design) krav.
+
+\textbf{Funktionelle krav}
+\begin{enumerate}
+    \item Produktet skal kunne indsamle data om brugstid
+    \item Produktet skal kunne vise statisik over brug
+    \item Brugren skal kunne indtaste hvilke apps de har abonnement på
+    \item Produktet skal kunne fortage en analyse af hvilke abonnementer der bruges mindst
+    \item Produktet skal kunne vise grafer og diagrammer over forbruget
+    \item Produktet skal kunne realiseres inden for tidsrammen af projektet 
+\end{enumerate}
+\textbf{Ikke-funktionelle krav}
+\begin{enumerate}
+    \item Produktet skal have en simpel og overskuelig brugergrænseflade
+    \item Produktet skal være tilgængeligt for både iOS og Android
+    \item Produktet skal være let at navigere samt bruges uden instruksioner
+\end{enumerate}
+

@@ -113,6 +113,51 @@
     \field{year}{2024}
   \endentry
 
+  \entry{Damhus2017}{inbook}{}{}
+    \name{author}{3}{}{%
+      {{hash=DM}{%
+         family={Damhus},
+         familyi={D\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Buch},
+         familyi={B\bibinitperiod},
+         given={Jesper},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=mEH}{%
+         family={m.fl.},
+         familyi={m\bibinitperiod},
+         given={Elisabeth\bibnamedelima Husum},
+         giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {da}%
+    }
+    \list{publisher}{1}{%
+      {Systime}%
+    }
+    \strng{namehash}{DMBJmEH1}
+    \strng{fullhash}{DMBJmEH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{isbn}{9788761686510}
+    \field{note}{Introduktion til underviseren ; Projekter ; 1. Fra id{\'e} til f{\ae}rdigt it-system ; 2. Planl{\ae}gning af et it-system ; 3. Udarbejdelse af et it-system ; 4. Evaluering af et it-system ; 5. Andet materiale ; Elevopl{\ae}g}
+    \field{pages}{p1046}
+    \field{series}{Informatik}
+    \field{title}{1. Fra id{\'e} til f{\ae}rdigt it-system}
+    \verb{url}
+    \verb https://informatik.systime.dk/?id=1046
+    \endverb
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{UnderstandingSubscriptionModels2025}{article}{}{}
     \name{author}{6}{}{%
       {{hash=GAR}{%

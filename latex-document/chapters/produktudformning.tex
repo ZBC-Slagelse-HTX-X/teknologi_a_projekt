@@ -1,29 +1,57 @@
-\subsection{Overordnet teknisk koncept}
-Vores app som skal håndtere subscription fatigue, skal overholde følgende tekniske krav:
-\begin{itemize}
-    \item \textbf{Programmeres via React Native} (expo)\\
-    Appen bliver udviklet via teknikker som benyttes i den virkelige softwareudviklingsindustri, og bygger på React som er et \textit{Framework}\footnote{Et framework understøtter programmeringen af diverse applikationer, her muliggør det Javascript at blive lavet om til eksekverbar filer som kan køre på diverse mobiltelefoner til programmeringssporget JavaScript} til JavaScript
-    \item \textbf{Trække data fra en given brugeres telefon og fortage statestik over det.}\\
-    Udataen skal helt konkret hentes via et element i expo-biblioteket(getUsage), som brugres mobiltelefonens indbyggede statestiksystem til at se hvor lang tid en given app har været i brug. 
-    \item 
-\end{itemize}
-
-
 \subsection{Overordnet om produktudvikling}
-Den konkrete udvikling af produktet påbegyndes herfra.
+Udviklingen af et digitalt produkt, som vores, er en kompleks proces og kan ikke realiseres i en lineær proces. Man arbejder derfor altid i en iterativ udviklingsproces, hvor et produkt udvikles i flere iterationer, hvor produktet gennemgår løbende tests, evalueringer og forbedringer.
 
-Når der arbejdes med at skabe et digitalt produkt, arbejder man som regl altid med en iterativ udviklingsprocess. Det betyder at man 
+Iterativ digital-produktudvikling opdeler sig i tre hovedfaser: Planlægning $\rightarrow$ Implementering $\rightarrow$ Evaluering. Disse tre faser gentages i samtlige iterationer indtil man opnår et produkt som opfylder de krav og ønsker som er opstillet for produktet.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{assets/trinvis_forbedring.png}
-    \caption{Iterativ udviklingsproces}
+    \fbox{\includegraphics[width=0.5\textwidth]{assets/trinvis_forbedring.png}}
+    \caption{Iterativ udviklingsproces\footfullcite{Damhus2017}}
 \end{figure}
+
+
+\subsection{Implementering af applikationen}
+Vores app som skal håndtere subscription fatigue, skal overholde følgende tekniske krav:
+
+\textbf{Programmeres via React Native} (expo)\\
+Appen bliver udviklet via teknikker som benyttes i den virkelige softwareudviklingsindustri, og bygger på React som er et \textit{Framework}\footnote{Et framework understøtter programmeringen af diverse applikationer, her muliggør det Javascript at blive lavet om til eksekverbar filer som kan køre på diverse mobiltelefoner til programmeringssporget JavaScript} til JavaScript
+
+\textbf{Trække data fra en given brugeres telefon og fortage statestik over det.}\\
+App usage data skal helt konkret hentes via et element i expo-biblioteket(getUsage), som brugres mobiltelefonens indbyggede statestiksystem til, at se hvor lang tid en given app har været i brug. (Omfanget og økonomien i dette projekt gør, at vi afgrænser os til at fokusere på android, da iOS har meget strenge regler for at hente data fra en brugers telefon samt udvikling af iOS apps kræver en eller flere Apple-enheder som vi ikke har adgang til. Apple kræver ligeledes et gebyr for overhovedt at kunne udvikle iOS apps, hvilket vi heller ikke har økonomi til.)
+
+
+\subsection{Appens struktur}
+Appen er struktureret i tre hoveddele:\\
+\subsubsection{Brugergrænseflade (Frontend)}
+Brugergrænsefladen håndterer alt det visuelle og de interaktive elementer i appen. Disse interaktive elementer består af:
+
+\begin{itemize}
+    \item Inputfelter til indtastning af abonnementer
+    \item Statistik visualiseringer (grafer og diagrammer)
+    \item Analyse resultater og anbefalinger
+\end{itemize}
+
+Brugergrænsefladen er føst optegnet i papirskitser (Se INDSET REF TIL PAPIR), og derefter digitaliseret i tegneprogrammet Frame0 (Se \autoref{apx:dig_skitse_af_app}). Herefter er skitsen blevet realiseret via React Natives (Expo) komponenter som View, Text, Presable. Disse komponenter som deres navn antyder, alt fra at vise tekst til inputfelter og knapper.
+
+\subsubsection{Dataindsamling}
+
+
+
+\subsubsection{Analyse og datavisualiseringsfunktion}
+
+
+\subsubsection{Første funktionelle prototype}
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.5\textwidth]{assets/proto_1_home.png}}
+    \caption{Første funktionelle prototype af appen}
+\end{figure}
+
 
 Vigtigheden af løbende test og evaluering...
 
-
-\subsection{Test}
-Specifikt om test og testmetoder...
-
-\subsubsection{Usibility Test}
 \subsubsection{A/B Testing}
+
+
+
+\subsection{Usibility Test / User tests}
