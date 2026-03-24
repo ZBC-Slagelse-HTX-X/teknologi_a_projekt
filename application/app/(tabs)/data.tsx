@@ -1,12 +1,15 @@
-import { Pressable, StyleSheet } from 'react-native';
-import { Text, View } from '@/components/Themed';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import LgStats from "@/components/lg_stats";
 import Overview from "@/components/overview";
+import { useSubscriptions } from '@/components/SubscriptionsContext';
+import { Text, View } from '@/components/Themed';
+import { Pressable, StyleSheet } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 
 export default function Data() {
   const insets = useSafeAreaInsets();
-  
+  const { runAnalysis } = useSubscriptions();
+
   return (
     <View style={[styles.outer_container, { paddingTop: 80 + insets.top }]}>
       <View style={[styles.container, styles.container_1]}>
@@ -14,7 +17,7 @@ export default function Data() {
       </View>
       
       <View style={styles.container}>
-        <Text style={styles.title}>Mere data kommer snart...</Text>
+        <LgStats />
       </View>
       
       <View style={styles.container}>
@@ -22,7 +25,7 @@ export default function Data() {
       </View>
 
       <View style={[styles.container, styles.container_2]}>
-          <Pressable style={styles.buttonStyle} onPress={() => alert('Køb Ny Analyse')}>
+          <Pressable style={styles.buttonStyle} onPress={() => runAnalysis()}>
             <Text style={[{fontSize: 20}]}>Køb Ny Analyse</Text>
           </Pressable>
       </View>
@@ -40,13 +43,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
-    borderWidth: 1,
-    borderColor: '#000',
     width: '90%',
     marginBottom: 20,
     },
     container_1: {
-      borderColor: '#000',
       backgroundColor: '#f0f0f0',
       padding: 10,
       alignItems: 'stretch',

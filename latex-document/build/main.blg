@@ -25,45 +25,45 @@ Warning--I didn't find a database entry for "LifeCycleGreenhouseGas2021"
 Biblatex version: 3.21
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 5 entries,
+You've used 6 entries,
             6402 wiz_defined-function locations,
-            1245 strings with 11386 characters,
-and the built_in function-call counts, 46829 in all, are:
-= -- 3986
-> -- 588
-< -- 130
-+ -- 1514
-- -- 241
-* -- 3428
-:= -- 5953
+            1250 strings with 11556 characters,
+and the built_in function-call counts, 51102 in all, are:
+= -- 4256
+> -- 666
+< -- 155
++ -- 1605
+- -- 267
+* -- 3706
+:= -- 6356
 add.period$ -- 0
-call.type$ -- 5
-change.case$ -- 49
+call.type$ -- 6
+change.case$ -- 58
 chr.to.int$ -- 53
-cite$ -- 8
-duplicate$ -- 4826
-empty$ -- 3871
-format.name$ -- 360
-if$ -- 9140
+cite$ -- 10
+duplicate$ -- 5323
+empty$ -- 4294
+format.name$ -- 407
+if$ -- 10040
 int.to.chr$ -- 0
-int.to.str$ -- 10
+int.to.str$ -- 12
 missing$ -- 0
-newline$ -- 211
-num.names$ -- 179
-pop$ -- 1629
+newline$ -- 233
+num.names$ -- 220
+pop$ -- 1965
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 97
 quote$ -- 0
-skip$ -- 821
+skip$ -- 978
 stack$ -- 0
-substring$ -- 7700
-swap$ -- 768
-text.length$ -- 146
-text.prefix$ -- 4
+substring$ -- 8108
+swap$ -- 880
+text.length$ -- 171
+text.prefix$ -- 5
 top$ -- 1
-type$ -- 158
+type$ -- 192
 warning$ -- 0
-while$ -- 756
+while$ -- 809
 width$ -- 0
-write$ -- 207
+write$ -- 228
 (There were 2 warnings)

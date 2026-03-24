@@ -207,5 +207,27 @@
     \field{journaltitle}{Advances in Consumer Research}
     \field{year}{2025}
   \endentry
+
+  \entry{Leveomkostninger2024}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=SD}{%
+         family={Statistik},
+         familyi={S\bibinitperiod},
+         given={Danmarks},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SD1}
+    \strng{fullhash}{SD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Danske forbrugerpriser fortsat EU´s højeste i 2024}
+    \verb{url}
+    \verb https://www.dst.dk/da/Statistik/udgivelser/NytHtml?cid=51053
+    \endverb
+    \field{year}{2024}
+  \endentry
 \enddatalist
 \endinput

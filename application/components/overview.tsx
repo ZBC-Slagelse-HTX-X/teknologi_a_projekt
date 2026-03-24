@@ -1,21 +1,26 @@
 import { Text, View } from '@/components/Themed';
-import { StyleSheet } from 'react-native';
+import { FlatList, StyleSheet } from 'react-native';
+import { useSubscriptions } from './SubscriptionsContext';
 
-
-const subscription: {name: string, type: string, price: number, due_date: string } =  {
-    name: "Netflix",
-    type: "Streaming",
-    price: 10,
-    due_date: "06",
-}
 
 export default function Overview() {{
+    const { subscriptions } = useSubscriptions(); 
+
+    const data = subscriptions.map((s,i) => ({
+        name: s.name,
+        price: s.minutes_used
+    }))
+
     return (
         <>
         <View style={styles.container}>
             <Text style={styles.header}>Detaljeret overblik over alt din data:</Text>
-            <Text style={styles.baseText}>{subscription.name}: {subscription.price}kr</Text>
-            <Text style={styles.baseText}>Samlet beløb: {subscription.price + subscription.price}kr</Text>
+            <FlatList 
+                data={data}
+                keyExtractor={(item, index) => String(index)}
+                renderItem={({ item }) => <Text>{item.name}: {item.price}kr</Text>}
+            />
+            
         </View>
         </>
     )
