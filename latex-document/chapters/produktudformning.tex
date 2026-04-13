@@ -11,19 +11,25 @@ Iterativ digital-produktudvikling opdeler sig i tre hovedfaser: Planlægning $\r
 
 
 \subsection{Implementering af applikationen}
-Vores app som skal håndtere subscription fatigue, skal overholde følgende tekniske krav:
+Vores app som skal håndtere \textit{Subscription Fatigue}, skal overholde følgende tekniske krav:
 
-\textbf{Programmeres via React Native} (expo)\\
+\textbf{Programmeres via React Native (expo)}\\
 Appen bliver udviklet via teknikker som benyttes i den virkelige softwareudviklingsindustri, og bygger på React som er et \textit{Framework}\footnote{Et framework understøtter programmeringen af diverse applikationer, her muliggør det Javascript at blive lavet om til eksekverbar filer som kan køre på diverse mobiltelefoner til programmeringssporget JavaScript} til JavaScript
 
-\textbf{Trække data fra en given brugeres telefon og fortage statestik over det.}\\
+\textbf{Trække data fra en given brugeres telefon og fortage statestik over det. \label{sec:krav_stat}}\\
 App usage data skal helt konkret hentes via et element i expo-biblioteket(getUsage), som brugres mobiltelefonens indbyggede statestiksystem til, at se hvor lang tid en given app har været i brug. (Omfanget og økonomien i dette projekt gør, at vi afgrænser os til at fokusere på android, da iOS har meget strenge regler for at hente data fra en brugers telefon samt udvikling af iOS apps kræver en eller flere Apple-enheder som vi ikke har adgang til. Apple kræver ligeledes et gebyr for overhovedt at kunne udvikle iOS apps, hvilket vi heller ikke har økonomi til.)
 
 
-\subsection{Appens struktur}
-Appen er struktureret i tre hoveddele:\\
-\subsubsection{Brugergrænseflade (Frontend)}
-Brugergrænsefladen håndterer alt det visuelle og de interaktive elementer i appen. Disse interaktive elementer består af:
+\subsection{Systemarkitektur}
+
+Applikationen er opbygget som en mobilapplikation via React Native og gør brug af Expo\footnote{Expo er et gratis open-source-framework til at bygge mobil- og webapps med React Native} og TypeScript\footnote{TypeScript er et programmeringssporg som bygger på JavaScript og giver programmøren bedre værktøjer under udviklingen af et hvert program}
+
+Systemerne indeles i forskellige lag og moduler. Ofte i udvikling af applikationer benytter man sig af to hovedlag: \textit{Frontend og Backend.\footfullcite{front_back_end}}. 
+
+Frontend håndterer alt det visuelle og alle de ting som en bruger kan interagere med. Brugerfladen kaldes UI (User interface) og brugrens oplevelse af brugerfladen kaldes UX(User experience). Backend-laget håndterer alt det som sker i baggrunden på \textit{serveren}, såsom  database, dataindsamling og analyse.
+
+\subsubsection{Brugergrænseflade (UI/UX)}
+Brugergrænsefladen håndterer, som førnævnt, alt det visuelle og de interaktive elementer i appen. Disse interaktive elementer er i denne app bla.:
 
 \begin{itemize}
     \item Inputfelter til indtastning af abonnementer
@@ -31,39 +37,68 @@ Brugergrænsefladen håndterer alt det visuelle og de interaktive elementer i ap
     \item Analyse resultater og anbefalinger
 \end{itemize}
 
-Brugergrænsefladen er føst optegnet i papirskitser (Se INDSET REF TIL PAPIR), og derefter digitaliseret i tegneprogrammet Frame0 (Se \autoref{apx:dig_skitse_af_app}). Herefter er skitsen blevet realiseret via React Natives (Expo) komponenter som View, Text, Presable. Disse komponenter som deres navn antyder, alt fra at vise tekst til inputfelter og knapper.
+De første koncepttegninger til appens brugergrænseflade laves som LOW-FIDELITY (Low-fi) prototyper på papir, da det er en hurtig og billig måde at visualisere og teste ideer på.
 
-\subsubsection{Dataindsamling}
+For at udvælge den bedste brugergrænseflade som skal laves til en HIGH-FIDELITY prototype, har vi lavet en A/B test af de to bedste koncepttegninger, hvor testpersoner har givet feedback på de to forskellige designs.
 
+\todo[inline]{Indsæt papirskitser brugt til A/B tests af Low-fi}
 
-
-\subsubsection{Analyse og datavisualiseringsfunktion}
-
-
-
-\subsubsection{Første funktionelle prototype}
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=0.5\textwidth]{assets/proto_0001_home.png}}
-    \caption{Første funktionelle prototype af appen}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=0.5\textwidth]{assets/proto_1_home.png}}
-    \caption{Anden funktionelle prototype af appen}
-\end{figure}
-
-
+Efter at have udvalgt det bedste design digitaliseres skitsen via tegneprogrammet Frame0 (se \autoref{apx:dig_skitse_af_app}). Denne digitaliserede skitse er en HIGH-FIDELITY prototype og bruges til at evaluere om designet opfylder de krav via har for appen. Det er også denne digitaliserede skitse som ligger til grund for den endelige implementering af appen, da denne HiFi prototype bruges til at kode appen efter (komponenter, mål, størrrelser mv.)
 
 \subsubsection{Dynamisk opbygning}
-Appen er opbygget med en dynamisk struktur, hvor hver side i appen er sat sammen af del-komponenter. Dette betyder at samme komponent kan genbruges på flere sider, og at det er nemt at tilføje nye sider ved at sammensætte de eksisterende komponenter på nye måder. Dette gør det også nemt at lave ændringer i design og funktion.
+Appen er opbygget med en dynamisk struktur. Det vil sige at, hver side i appen er sat sammen af en masse komponenter, som tilsammen udgør en given side. Et komponent til en side kunne eksempeltvis være navigationsbjælken.
+
+
+Eksempeltvis: en side hvor vi ønsker at vise brugeren et overblik over hvor mange abonomenter han har, hvad de koster og hvor lang tid han har brugt dem hver i sær, så på en side henter vi komponenterne: subscriptions, subscription\_costs og subscription\_usage\_chart (\textit{alle navne er blot eksempler}). Denne teknik resulterer i at man kan genbruge kode og gør derved arbejdsprocessen hurtiger og mere effektiv. 
 
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=0.5\textwidth]{assets/teknisk_dyn_skitse.png}}
     \caption{Ilustration af dynamisk opbygning af appen}
 \end{figure}
+
+
+\subsubsection{Dataindsamling}
+Dataindsamlingsdelen af appen er, som nævnt i \ref{sec:krav_stat}, begrænset til android-enheder, da apples regler for indhentning af data er meget strenge.
+
+Før der kan fortages statistik og analyser af brugerens abonomenter, skal vi indhente data om deres forbrug. Dette gøres ved et gratis open-source-modul som giver adgang til androids UsageStats API\footnote{\url{https://github.com/PriyavKaneria/expo-android-usagestats}}(application programming interface)
+
+
+
+En implementering af alle abonomenttjenester til appen, vil blive nært umueligt for en person at nå inden for dette projektstidsramme, da alle individuelle tjenester skal kodes individuelt. Vi har derfor valgt at bruge Netflix som eksempel og proof-of-concept.
+
+Ifølges modulets dokumentation\footnote{\url{https://github.com/PriyavKaneria/expo-android-usagestats}} skal appen bruge brugerens tilladelse for at indsamle det pågældende data. Dette gøres ved en funktion \textit{ensureUsagePermission()}
+
+
+\begin{lstlisting}[language=TypeScript]
+// Netflix clienten
+const netflix = stats.find((app) => app.packageName === 'com.netflix.mediaclient');
+...
+// Beregning af forbrug i minutter
+const ms = netflix.totalTimeInForeground ?? 0;
+const minutes = Math.round(ms / 60000);
+\end{lstlisting}
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.6\textwidth]{assets/usage_flowchart.png}}
+    \caption{Flowchart for dataindsamling}
+\end{figure}
+
+\subsubsection{Analyse og datavisualiseringsfunktion}
+
+
+
+\subsubsection{A/B test af navigationsbjælke}
+Under udviklingen af appens navigationsbjælke, er der blevet udformet to forskellige versioner af den. Den første (A, til venstre) er en mere traditionel navigationsbjælke, som fylder hele breden af skærmen og har en baggrundsfarve. Dem anden (B, til højre) er en mere minimalistisk (moderne) navigationsbjælke, som kun fylder en del af skærmens brede, og som ikke har en baggrundsfarve men den kaster en skygge på baggrunden og giver derved en svæve-effekt. 
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.9\textwidth, trim={0cm 25cm 0cm 0cm}, clip]{assets/proto_1_comp.png}}
+    \caption{A/B test af navigationsbjælke (se appedix \ref{apx:navbar_ab_test})}
+\end{figure}
+
+
 
 
 

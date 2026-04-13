@@ -20,50 +20,50 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: bibliography.bib
 Warning--I'm ignoring Damhus2017's extra "note" field
---line 46 of file bibliography.bib
-Warning--I didn't find a database entry for "LifeCycleGreenhouseGas2021"
+--line 54 of file bibliography.bib
+Warning--I didn't find a database entry for "biblatex-control"
 Biblatex version: 3.21
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 6 entries,
+You've used 7 entries,
             6402 wiz_defined-function locations,
-            1250 strings with 11556 characters,
-and the built_in function-call counts, 51102 in all, are:
-= -- 4256
-> -- 666
-< -- 155
-+ -- 1605
-- -- 267
-* -- 3706
-:= -- 6356
+            1254 strings with 11695 characters,
+and the built_in function-call counts, 61480 in all, are:
+= -- 4965
+> -- 974
+< -- 204
++ -- 1962
+- -- 424
+* -- 4495
+:= -- 7390
 add.period$ -- 0
-call.type$ -- 6
-change.case$ -- 58
-chr.to.int$ -- 53
-cite$ -- 10
-duplicate$ -- 5323
-empty$ -- 4294
-format.name$ -- 407
-if$ -- 10040
+call.type$ -- 7
+change.case$ -- 60
+chr.to.int$ -- 24
+cite$ -- 14
+duplicate$ -- 6532
+empty$ -- 5108
+format.name$ -- 594
+if$ -- 12148
 int.to.chr$ -- 0
-int.to.str$ -- 12
+int.to.str$ -- 16
 missing$ -- 0
-newline$ -- 233
-num.names$ -- 220
-pop$ -- 1965
+newline$ -- 272
+num.names$ -- 281
+pop$ -- 2670
 preamble$ -- 1
-purify$ -- 97
+purify$ -- 126
 quote$ -- 0
-skip$ -- 978
+skip$ -- 1259
 stack$ -- 0
-substring$ -- 8108
-swap$ -- 880
-text.length$ -- 171
-text.prefix$ -- 5
+substring$ -- 9269
+swap$ -- 1068
+text.length$ -- 209
+text.prefix$ -- 0
 top$ -- 1
-type$ -- 192
+type$ -- 238
 warning$ -- 0
-while$ -- 809
+while$ -- 904
 width$ -- 0
-write$ -- 228
+write$ -- 265
 (There were 2 warnings)

@@ -17,145 +17,24 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global/global}
-  \entry{ASLAN2025111637}{article}{}{}
-    \name{author}{6}{}{%
-      {{hash=AT}{%
-         family={Aslan},
-         familyi={A\bibinitperiod},
-         given={Tuğana},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=HP}{%
-         family={Holzapfel},
-         familyi={H\bibinitperiod},
-         given={Peter},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=SL}{%
-         family={Stobbe},
+  \entry{Leveomkostninger2024}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=SD}{%
+         family={Statistik},
          familyi={S\bibinitperiod},
-         given={Lutz},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=GA}{%
-         family={Grimm},
-         familyi={G\bibinitperiod},
-         given={Andreas},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=NNF}{%
-         family={Nissen},
-         familyi={N\bibinitperiod},
-         given={Nils\bibnamedelima F.},
-         giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-      {{hash=FM}{%
-         family={Finkbeiner},
-         familyi={F\bibinitperiod},
-         given={Matthias},
-         giveni={M\bibinitperiod},
+         given={Danmarks},
+         giveni={D\bibinitperiod},
       }}%
     }
-    \keyw{Information systems, Energy sustainability, Energy systems, Energy Modelling}
-    \strng{namehash}{AT+1}
-    \strng{fullhash}{ATHPSLGANNFFM1}
+    \strng{namehash}{SD1}
+    \strng{fullhash}{SD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{abstract}{%
-    Summary The climate impact of data centers is expected to increase due to rising demand for information and communication technology services. At the same time, the European Union aims for climate neutral data centers by 2030. To map potential developments of emissions associated with data centers to the year 2030, we develop a generic data center greenhouse gas (GHG) inventory in accordance with the GHG protocol. Our results show that climate neutrality cannot be achieved by reduction measures only. We predict an increase in energy use for our illustrative Germany-based data center by 20%, and an increase in the overall carbon footprint by 13% between 2020 and 2030. Although operational measures and increased use of renewable electricity can decrease GHG emissions over the 2020 level by up to 70%, achieving net zero inevitably requires mechanisms to mitigate and compensate emissions across the value chain.%
-    }
-    \verb{doi}
-    \verb https://doi.org/10.1016/j.isci.2024.111637
-    \endverb
-    \field{issn}{2589-0042}
-    \field{number}{1}
-    \field{pages}{111637}
-    \field{title}{Toward climate neutral data centers: Greenhouse gas inventory, scenarios, and strategies}
+    \field{title}{Danske forbrugerpriser fortsat EU´s højeste i 2024}
     \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S2589004224028645
+    \verb https://www.dst.dk/da/Statistik/udgivelser/NytHtml?cid=51053
     \endverb
-    \field{volume}{28}
-    \field{journaltitle}{iScience}
-    \field{year}{2025}
-  \endentry
-
-  \entry{SubscriptionEconomy2024}{article}{}{}
-    \name{author}{2}{}{%
-      {{hash=CP}{%
-         family={Cobzaru},
-         familyi={C\bibinitperiod},
-         given={Paula},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=TA}{%
-         family={Tugui},
-         familyi={T\bibinitperiod},
-         given={Alexandru},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CPTA1}
-    \strng{fullhash}{CPTA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \verb{doi}
-    \verb 10.17265/2328-2185
-    \endverb
-    \field{pages}{137\bibrangedash 145}
-    \field{title}{The Subscription Economy and Its Contribution to the Global Economy}
-    \field{volume}{12}
-    \field{journaltitle}{Management Studies}
-    \field{month}{06}
     \field{year}{2024}
-  \endentry
-
-  \entry{Damhus2017}{inbook}{}{}
-    \name{author}{3}{}{%
-      {{hash=DM}{%
-         family={Damhus},
-         familyi={D\bibinitperiod},
-         given={Martin},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=BJ}{%
-         family={Buch},
-         familyi={B\bibinitperiod},
-         given={Jesper},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=mEH}{%
-         family={m.fl.},
-         familyi={m\bibinitperiod},
-         given={Elisabeth\bibnamedelima Husum},
-         giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-    }
-    \list{language}{1}{%
-      {da}%
-    }
-    \list{publisher}{1}{%
-      {Systime}%
-    }
-    \strng{namehash}{DMBJmEH1}
-    \strng{fullhash}{DMBJmEH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{isbn}{9788761686510}
-    \field{note}{Introduktion til underviseren ; Projekter ; 1. Fra id{\'e} til f{\ae}rdigt it-system ; 2. Planl{\ae}gning af et it-system ; 3. Udarbejdelse af et it-system ; 4. Evaluering af et it-system ; 5. Andet materiale ; Elevopl{\ae}g}
-    \field{pages}{p1046}
-    \field{series}{Informatik}
-    \field{title}{1. Fra id{\'e} til f{\ae}rdigt it-system}
-    \verb{url}
-    \verb https://informatik.systime.dk/?id=1046
-    \endverb
-    \field{year}{2017}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{UnderstandingSubscriptionModels2025}{article}{}{}
@@ -197,36 +76,196 @@
          giveni={V\bibinitperiod},
       }}%
     }
-    \strng{namehash}{GAR+1}
+    \strng{namehash}{GARMPSRKSKKTSV1}
     \strng{fullhash}{GARMPSRKSKKTSV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
     \field{title}{Understanding Subscription Models: How Psychology Shapes Customer Loyalty, Value Perception, and Cancellation Patterns}
     \field{journaltitle}{Advances in Consumer Research}
     \field{year}{2025}
   \endentry
 
-  \entry{Leveomkostninger2024}{article}{}{}
-    \name{author}{1}{}{%
-      {{hash=SD}{%
-         family={Statistik},
+  \entry{subFatt}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=SA}{%
+         family={Sunori},
          familyi={S\bibinitperiod},
-         given={Danmarks},
-         giveni={D\bibinitperiod},
+         given={Anu},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mittal},
+         familyi={M\bibinitperiod},
+         given={Amit},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gangola},
+         familyi={G\bibinitperiod},
+         given={Saurabh},
+         giveni={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SD1}
-    \strng{fullhash}{SD1}
+    \strng{namehash}{SAMAGS1}
+    \strng{fullhash}{SAMAGS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{title}{Danske forbrugerpriser fortsat EU´s højeste i 2024}
+    \field{title}{Statistical Analysis of Subscription Fatigue: A Growing Consumer Phenomenon}
+    \field{month}{11}
+    \field{year}{2024}
+  \endentry
+
+  \entry{Damhus2017}{inbook}{}{}
+    \name{author}{3}{}{%
+      {{hash=DM}{%
+         family={Damhus},
+         familyi={D\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Buch},
+         familyi={B\bibinitperiod},
+         given={Jesper},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=mEH}{%
+         family={m.fl.},
+         familyi={m\bibinitperiod},
+         given={Elisabeth\bibnamedelima Husum},
+         giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {da}%
+    }
+    \list{publisher}{1}{%
+      {Systime}%
+    }
+    \strng{namehash}{DMBJmEH1}
+    \strng{fullhash}{DMBJmEH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9788761686510}
+    \field{note}{Introduktion til underviseren ; Projekter ; 1. Fra id{\'e} til f{\ae}rdigt it-system ; 2. Planl{\ae}gning af et it-system ; 3. Udarbejdelse af et it-system ; 4. Evaluering af et it-system ; 5. Andet materiale ; Elevopl{\ae}g}
+    \field{pages}{p1046}
+    \field{series}{Informatik}
+    \field{title}{1. Fra id{\'e} til f{\ae}rdigt it-system}
     \verb{url}
-    \verb https://www.dst.dk/da/Statistik/udgivelser/NytHtml?cid=51053
+    \verb https://informatik.systime.dk/?id=1046
     \endverb
+    \field{month}{03}
+    \field{year}{2017}
+  \endentry
+
+  \entry{front_back_end}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={Geekforgeeks.org},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Fontend Vs Backend Development}
+    \verb{url}
+    \verb https://www.geeksforgeeks.org/blogs/frontend-vs-backend/
+    \endverb
+    \field{month}{11}
+    \field{year}{2025}
+  \endentry
+
+  \entry{ASLAN2025111637}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=AT}{%
+         family={Aslan},
+         familyi={A\bibinitperiod},
+         given={Tuğana},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HP}{%
+         family={Holzapfel},
+         familyi={H\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Stobbe},
+         familyi={S\bibinitperiod},
+         given={Lutz},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Grimm},
+         familyi={G\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NNF}{%
+         family={Nissen},
+         familyi={N\bibinitperiod},
+         given={Nils\bibnamedelima F.},
+         giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Finkbeiner},
+         familyi={F\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Information systems, Energy sustainability, Energy systems, Energy Modelling}
+    \strng{namehash}{ATHPSLGANNFFM1}
+    \strng{fullhash}{ATHPSLGANNFFM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Summary The climate impact of data centers is expected to increase due to rising demand for information and communication technology services. At the same time, the European Union aims for climate neutral data centers by 2030. To map potential developments of emissions associated with data centers to the year 2030, we develop a generic data center greenhouse gas (GHG) inventory in accordance with the GHG protocol. Our results show that climate neutrality cannot be achieved by reduction measures only. We predict an increase in energy use for our illustrative Germany-based data center by 20%, and an increase in the overall carbon footprint by 13% between 2020 and 2030. Although operational measures and increased use of renewable electricity can decrease GHG emissions over the 2020 level by up to 70%, achieving net zero inevitably requires mechanisms to mitigate and compensate emissions across the value chain.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.isci.2024.111637
+    \endverb
+    \field{issn}{2589-0042}
+    \field{number}{1}
+    \field{pages}{111637}
+    \field{title}{Toward climate neutral data centers: Greenhouse gas inventory, scenarios, and strategies}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S2589004224028645
+    \endverb
+    \field{volume}{28}
+    \field{journaltitle}{iScience}
+    \field{year}{2025}
+  \endentry
+
+  \entry{SubscriptionEconomy2024}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=CP}{%
+         family={Cobzaru},
+         familyi={C\bibinitperiod},
+         given={Paula},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tugui},
+         familyi={T\bibinitperiod},
+         given={Alexandru},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CPTA1}
+    \strng{fullhash}{CPTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.17265/2328-2185
+    \endverb
+    \field{pages}{137\bibrangedash 145}
+    \field{title}{The Subscription Economy and Its Contribution to the Global Economy}
+    \field{volume}{12}
+    \field{journaltitle}{Management Studies}
+    \field{month}{06}
     \field{year}{2024}
   \endentry
 \enddatalist

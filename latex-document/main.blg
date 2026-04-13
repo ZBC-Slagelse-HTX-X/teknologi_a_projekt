@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99e (TeX Live 2026/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=8) to 20 items from 10.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: bibliography.bib
+Warning--I'm ignoring Damhus2017's extra "note" field
+--line 46 of file bibliography.bib
+Biblatex version: 3.21
+Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+You've used 6 entries,
+            6402 wiz_defined-function locations,
+            1248 strings with 11504 characters,
+and the built_in function-call counts, 51102 in all, are:
+= -- 4256
+> -- 666
+< -- 155
++ -- 1605
+- -- 267
+* -- 3706
+:= -- 6356
+add.period$ -- 0
+call.type$ -- 6
+change.case$ -- 58
+chr.to.int$ -- 53
+cite$ -- 10
+duplicate$ -- 5323
+empty$ -- 4294
+format.name$ -- 407
+if$ -- 10040
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 0
+newline$ -- 233
+num.names$ -- 220
+pop$ -- 1965
+preamble$ -- 1
+purify$ -- 97
+quote$ -- 0
+skip$ -- 978
+stack$ -- 0
+substring$ -- 8108
+swap$ -- 880
+text.length$ -- 171
+text.prefix$ -- 5
+top$ -- 1
+type$ -- 192
+warning$ -- 0
+while$ -- 809
+width$ -- 0
+write$ -- 228
+(There was 1 warning)
