@@ -6,13 +6,7 @@ import { PieChart } from "react-native-chart-kit";
 
 const screenWidth = Dimensions.get("window").width;
 
-// Build chart data from the shared `subscriptions` array. We use the
-// subscription `price` as the numeric value for the pie chart. If you later
-// add a dedicated usage field (e.g. minutes_used), switch to that.
 const colorPalette = ["#83A7EA", "#32CD32", "#992011", "#F4A261", "#E76F51", "#2A9D8F", "#264653"];
-
-// chart data will be built on render so runtime additions are reflected
-// (see inside the component for the rebuild).
 
 const chartConfig = {
   color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
@@ -21,10 +15,6 @@ const chartConfig = {
 export default function LgStats() {
   const { subscriptions } = useSubscriptions();
 
-  // Rebuild chart data from context subscriptions so runtime additions
-  // and analysis updates are reflected when this component re-renders.
-  // We compute both the raw minutes (used for the list) and the
-  // percentage (used as the numeric value for the pie chart).
   const totalMinutes = subscriptions.reduce(
     (acc, s) => acc + (s.minutes_used ?? s.price),
     0
@@ -36,8 +26,6 @@ export default function LgStats() {
     return {
       name: s.name,
       minutes_used: minutes,
-      // `percentage` will be used as the numeric accessor for the pie chart
-      // so the numbers shown on the slices represent percent values.
       percentage,
       color: colorPalette[i % colorPalette.length],
       legendFontColor: "#333",
@@ -45,7 +33,7 @@ export default function LgStats() {
     };
   });
 
-  // sort a copy of the data so the list shows least-used subscriptions first
+  
   const sortedData = [...chartData].sort((a, b) => (a.minutes_used ?? 0) - (b.minutes_used ?? 0));
 
   return (
@@ -57,8 +45,6 @@ export default function LgStats() {
               width={Math.round(screenWidth * 0.4)}
               height={Math.round((screenWidth * 0.8) * 0.6)}
               chartConfig={chartConfig}
-              // use percentage values for slice labels so the numbers shown
-              // on the chart correspond to percent (e.g. 25.3)
               accessor="percentage"
               backgroundColor="transparent"
               paddingLeft="39"

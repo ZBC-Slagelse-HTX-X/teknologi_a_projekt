@@ -19,31 +19,25 @@ I dette afsnit vil vi beskrive processen af udviklingen af appens brugergrænsef
 
 \subsubsection{LowFi-Prototyper}
 
-Til at starte med har vi lavet 4 papir skitser, som vi ved en spørgeundersøgelse, har fået folk til at svare på. En A/B test hvor vi har fået data fra de forskellige målgrupper. Da vi prøver at målrette på målgruppen 21+ har vi valgt at fokusere på besvarelserne fra dem der er 21+.
+Til at starte med har vi lavet 4 papir skitser, som vi ved en spørgeundersøgelse,
+har fået folk til at svare på igennem en service der hedder Nordstatpanel, vi har udsendt en A/B test hvor vi har fået data fra de forskellige
+målgrupper. Da vi prøver at målrette på målgruppen 25+ har vi valgt at fokusere
+på besvarelserne fra dem der er 25+.
 
-120 af de 350 der har besvaret vores spørgeundersøgelses A/B test var 21+ ifølge den afkrydsning de har lavet, i spørgeskemaet. 
-
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=0.5\textwidth]{assets/low_fi_frame0_skitse_1.png}}
-    \caption{LowFi skitse 1}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=0.5\textwidth]{assets/low_fi_frame0_skitse_2.png}}
-    \caption{LowFi skitse 2}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=0.5\textwidth]{assets/low_fi_frame0_skitse_3.png}}
-    \caption{LowFi skitse 3}
-\end{figure}
+120 af de 350 der har besvaret vores spørgeundersøgelses A/B test var 25+ ifølge den
+afkrydsning de har lavet, i spørgeskemaet.
+\begin{landscape}
+    \begin{figure}[H]
+        \centering
+        \fbox{\includegraphics[width=0.5\textwidth]{assets/low_fi_frame0_skitse_1.png}}
+        \fbox{\includegraphics[width=0.5\textwidth]{assets/low_fi_frame0_skitse_2.png}}
+        \fbox{\includegraphics[width=0.5\textwidth]{assets/low_fi_frame0_skitse_3.png}}
+    \end{figure}
+\end{landscape}
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.5\textwidth, angle=90]{assets/lowfi_skitse_4.jpg}}
+    \fbox{\includegraphics[width=0.8\textwidth]{assets/skitse_af_app.png}}
     \caption{LowFi skitse 4}
     \label{fig:skitse_4}
 \end{figure}
@@ -64,19 +58,26 @@ Skitse 4 & 39\% \\ \hline
 
 
 \subsubsection{Digital produktskitse}
-Ud fra den Data har vi valgt at fremstille en professionel, high-fidelity, tegning med udgangspunkt fra skitse 4 (figur \ref{fig:skitse_4}), da størstedelen af vores målgruppe valgte den 
+Ud fra den Data har vi valgt at fremstille en professionel, high-fidelity, tegning med udgangspunkt fra skitse 4 (figur \ref{fig:skitse_4}), da størstedelen af vores målgruppe valgte den.
 
-Vi har lavet en endelig produktskitse ved brug af Figma, som er et UI/UX designværktøj, som der bliver brugt af nogle verdens største virksomheder (Microsoft, Github, Stripe, Duolingo, m.fl.\footnote{\url{https://www.figma.com/}}) 
+Vi har lavet en endelig produktskitse ved brug af Figma, som er et UI/UX designværktøj, som der bliver brugt af nogle af verdens største virksomheder (Microsoft, Github, Stripe, Duolingo, m.fl.\footnote{\url{https://www.figma.com/}}) 
 
-Formålet med vores software er at skabe en komfortable brugeroplevelse med mindst mulig støj og hurtigere resultater, vi har fokus på at du ikke skal være på appen i for lang tid, men bruge den som et værktøj i din hverdag, lidt ligesom en tommestok du kun bruger når du skal måle ting op. 
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.6\textwidth]{assets/hifi-skitser/prototype.jpg}}
+    \label{fig:hifi_skit}
+    \caption{High-fidelity skitse}
+\end{figure}
 
-Der er fokus på der er en klar og tydelig brugerflade der fortæller dig præcist hvor du kan behandle dine abonnementer samt give dig svar på ting du søger efter, samt en profilside hvor du skal kunne logge ind og ud. 
+Formålet med vores software er at skabe en komfortable brugeroplevelse med mindst mulig støj og hurtigere resultater. Vi har fokus på at du ikke skal være på appen i for lang tid, men bruge den som et værktøj i din hverdag, lidt ligesom en tommestok du kun bruger når du skal måle ting op. 
 
-Vi går primært efter en ældre (21+ ) målgruppe med vores userinterface, da børn og unge ikke har det samme økonomiske problemer som nye voksne mennesker har. 
+Der er fokus på, at der er en klar og tydelig brugerflade der fortæller dig præcist hvor du kan behandle dine abonnementer samt give dig svar på ting du søger efter, samt en profilside hvor du skal kunne logge ind og ud. 
+
+Vi går primært efter en ældre (21+ ) målgruppe med vores userinterface, da børn og unge ikke har det samme økonomiske problemer som voksne mennesker har. 
 
 Vores interface skal også have muligheden for at vise diagrammer, og statistikker, som skal gøre det nemmere for brugeren at visualisere sit forbrug samt alternativer, for at give et let og overskueligt overblik. 
 
-Vores indkomst fra appen kommer fra at hvis du vil have en detaljeret analyse, som bedre alternativer på dit midlertidige abonnement, har vi tænkt os at anvende OTP (One time purchases) for at give brugeren adgang til de mere eksklusive funktioner. 
+Vores indkomst fra appen kommer fra, hvis du vil have en mere detaljeret analyse, som bedre alternativer på dit midlertidige abonnement, har vi tænkt os at anvende OTP (One time purchases) for at give brugeren adgang til de mere eksklusive funktioner. 
 
 Dette One Time purchase kan bestilles hver gang du vil have opdateret din analyse for at gøre det så nemt for dig som muligt, samt dato på dine tidlige r dig som muligt, samt dato på dine tidligere analyser som du også kan tilgå, så du har styr på hvornår du har fået lavet den og hvor relevant den er, denne funktion kan også give os muligheden for at analysere hvor meget du har sparet på at anvende vores ap re analyser som du også kan tilgå, så du har styr på hvornår du har fået lavet den og hvor relevant den er, denne funktion kan også give os muligheden for at analysere hvor meget du har sparet på at anvende vores app hvilket bygger Troværdighed med kunden. 
 
@@ -110,13 +111,11 @@ Brugergrænsefladen håndterer, som førnævnt, alt det visuelle og de interakti
     \item Analyse resultater og anbefalinger
 \end{itemize}
 
-De første koncepttegninger til appens brugergrænseflade laves som LOW-FIDELITY (Low-fi) prototyper på papir, da det er en hurtig og billig måde at visualisere og teste ideer på.
+De første koncepttegninger til appens brugergrænseflade laves som LOW-FIDELITY (Low-fi) prototyper på papir, da det er en hurtig og billig måde at visualisere og teste ideer på. Efter de er udformet i papir tager vi skidtet videre og digitalisere dem, stadig som low-fi, ved skitsetegneprogrammet Frame0. Dette gør vi for at få en pænere og mere akurat tegning som vi kan teste.
 
 For at udvælge den bedste brugergrænseflade som skal laves til en HIGH-FIDELITY prototype, har vi lavet en A/B test af de to bedste koncepttegninger, hvor testpersoner har givet feedback på de to forskellige designs.
 
-\todo[inline]{Indsæt papirskitser brugt til A/B tests af Low-fi}
-
-Efter at have udvalgt det bedste design digitaliseres skitsen via tegneprogrammet Frame0 (se \autoref{apx:dig_skitse_af_app}). Denne digitaliserede skitse er en HIGH-FIDELITY prototype og bruges til at evaluere om designet opfylder de krav via har for appen. Det er også denne digitaliserede skitse som ligger til grund for den endelige implementering af appen, da denne HiFi prototype bruges til at kode appen efter (komponenter, mål, størrrelser mv.)
+Efter at have udvalgt det bedste design, tegnes en high-fi skitse ved tegneprogrammet Figma (se \autoref{fig:hifi_skit}). Denne digitaliserede skitse er en HIGH-FIDELITY prototype og bruges til at evaluere om designet opfylder de krav via har for appen. Det er også denne digitaliserede skitse som ligger til grund for den endelige implementering af appen, da denne HiFi prototype bruges til at kode appen efter (komponenter, mål, størrrelser mv.)
 
 \subsubsection{Dynamisk opbygning}
 Appen er opbygget med en dynamisk struktur. Det vil sige at, hver side i appen er sat sammen af en masse komponenter, som tilsammen udgør en given side. Et komponent til en side kunne eksempeltvis være navigationsbjælken.
@@ -138,28 +137,34 @@ Før der kan fortages statistik og analyser af brugerens abonomenter, skal vi in
 
 
 
-En implementering af alle abonomenttjenester til appen, vil blive nært umueligt for en person at nå inden for dette projektstidsramme, da alle individuelle tjenester skal kodes individuelt. Vi har derfor valgt at bruge Netflix som eksempel og proof-of-concept.
+En implementering af alle abonomenttjenester til appen, vil blive nært umueligt for en person at nå inden for dette projektstidsramme, da alle individuelle tjenester skal kodes individuelt. Forbruget hentes ved at henvise til den pågælende apps modul-navn. Vi har derfor valgt at opstille et eksempel på en brugers abonomenter, hvor man kan tilføje et YouTube-abonoment.
 
-Ifølges modulets dokumentation\footnote{\url{https://github.com/PriyavKaneria/expo-android-usagestats}} skal appen bruge brugerens tilladelse for at indsamle det pågældende data. Denne tilladelse forspørges via funktionen: \textit{ensureUsagePermission()} (se appendix INSERT REF TO APPENDIX) 
+Ifølges modulets dokumentation\footnote{\url{https://github.com/PriyavKaneria/expo-android-usagestats}} skal appen bruge brugerens tilladelse for at indsamle det pågældende data. Denne tilladelse forspørges via funktionen: \textit{ensureUsagePermission()} (se \autoref{apx:getUsage}) 
 
-Efter tilladelsen er givet, hentes dataen via \textit{getNetflixUsageToday()} og den returnerer tiden i milisekunder, hvorefter det omregnet til minutter. Et udklip af koden ses på figur \ref{fig:code_snippit_1}. 
+Efter tilladelsen er givet, hentes dataen via \textit{getUsageForPackage(packageName, days)} og den returnerer tiden i milisekunder, hvorefter det omregnes til minutter. Et udklip af koden ses på figur \ref{fig:code_snippit_1}. 
 
-\begin{figure}
-    \label{fig:code_snippit_1}
-    \begin{lstlisting}[language=TypeScript]
-        // Netflix clienten
-        const netflix = stats.find((app) => app.packageName === 'com.netflix.mediaclient');
-        ...
-        // Beregning af forbrug i minutter
-        const ms = netflix.totalTimeInForeground ?? 0;
-        const minutes = Math.round(ms / 60000);
-    \end{lstlisting}
-    \caption{Kodeudklip fra getUsage.tsx INSET REF TIL APPENDIX }
+\begin{figure}[H]
+\label{fig:code_snippit_1}
+\begin{mdframed}[backgroundcolor=blue!5]
+\begin{minted}[breaklines]{tsx}
+const ms = (s as any).totalTimeInForeground ?? (s as any).totalTimeForeground ?? (s as any).totalForegroundTime ?? (s as any).totalTime ?? 0;
+...
+const totalMs = matches.reduce((acc: number, s: any) => acc + (Number(getMs(s)) || 0), 0);
+...
+const minutes = Math.round(totalMs / 60000);
+return { totalTimeInForeground: totalMs, minutes };
+\end{minted}
+\end{mdframed}
+
+\caption{Kodeudklip fra getUsage.tsx (\autoref{apx:getUsage})}
 \end{figure}
+
+På figur \ref{fig:flowchart} ses et flowchart, som viser hvordan programmet indsamler dataen.
 
 \begin{figure}[H]
     \centering
     \fbox{\includegraphics[width=0.6\textwidth]{assets/usage_flowchart.png}}
+    \label{fig:flowchart}
     \caption{Flowchart for dataindsamling}
 \end{figure}
 
@@ -168,14 +173,35 @@ Tidsrammen af projektet har begrænset udviklingen af selve købe-funktionalitet
 
 Til selve visualiseringen har vi valgt at benytte et circeldiagram, da vi mener at det er en yderst velpassende diagramtype til vores projekt.
 
-Under motorhjelmen benytter vi igen et gratis-open-soruce modul 
+Under motorhjelmen benytter vi igen et gratis-open-soruce modul: \textit{react-native-chart-kit}. Dette modul kan vi fodre dataen som data-indsamleren har indsamlet, og tegne et cirkeldiagram.
+
+Daten hentes ind i koden, og den sorteres i en liste med de mindst brugte abonomenter først. Herefter indsættes den sorterede data i \textit{react-native-chart-kit}-modulet, jf. modulets dokumentation\footnote{\url{https://github.com/indiespirit/react-native-chart-kit}}, og vi tegner grafen på skærmen ved tryk på »Køb Analyse« knappen.
+
+\begin{mdframed}[backgroundcolor=blue!5]
+\begin{minted}[breaklines]{tsx}
+...
+const sortedData = [...chartData].sort((a, b) => (a.minutes_used ?? 0) - (b.minutes_used ?? 0));    
+...
+<PieChart
+    data={chartData}
+    width={Math.round(screenWidth * 0.4)}
+    height={Math.round((screenWidth * 0.8) * 0.6)}
+    chartConfig={chartConfig}
+    accessor="percentage"
+    backgroundColor="transparent"
+    paddingLeft="39"
+    center={[0, 0]}
+    absolute
+    hasLegend={false}
+/>
+\end{minted}
+\end{mdframed}
 
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.6\textwidth]{assets/data_page_graph.jpg}}
+    \fbox{\includegraphics[width=0.6\textwidth]{assets/hifi-skitser/data-after-yt.jpg}}
     \caption{Datavisualisering}
 \end{figure}
-
 
 
 
@@ -189,12 +215,15 @@ Under udviklingen af appens navigationsbjælke, er der blevet udformet to forske
 \end{figure}
 
 
+\subsection{Afrunding af produktudformning}
+Produktet er nu færdigt, og indtræder i Alpha-facen. Et digitalt produkt udgives ofte ikke første gang som det komplette produkt, men i facer. Den første face er pre-alpha facen, og betegner et program som er i sit tideligste udviklings stadie, altså det er stadig et koncept/tidelig prototype.
 
+Det næste stadie kaldes alpha. Her begynder funktionalitet at være mere færdige og komplette. Alpha facen er dog stadig intern (som regl). I denne face kan mange ting stadig ændre sig, såsom UI.
 
+Det næste stadie er Beta. I dette stadie åbnet produktet op for omværdnen og rigtige brugere kan benytte programmet. Dette kræver at programmet er meget mere komplet end i alpha stadiet.
 
+Efter programmet har været i Beta, kan der komme flere skridt før den entlige udgivelse af programmet.
 
-\subsubsection{A/B Testing}
+Vi har valgt at "udgive" programmet i en Alpha-version, da vi mener at programmet er et sted nu, hvor den passer ind der da dens funktionalitet langt hen ad vejen er på plads. Men den mangler selfølgelig stadig meget for at kunne udgives til omverdnen. Vi skal eksempeltvis tilføje muligheden for at oprette en bruger, betalingssystem, mv.
 
-
-
-\subsection{Usibility Test / User tests}
+Det skal også noteres sig at hvis vi skulle arbejde videre på dette projekt, ville vi helt absolut kigge ind i den fysiske enhed som kan overvåge andre enheder end kun mobilen, fordi vi har oplevet under testfacen at det ikke altid er helt ræpresentativt for det entlige forbrug af abonomenter.

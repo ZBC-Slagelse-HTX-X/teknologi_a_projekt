@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.9)  21 APR 2026 09:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.9)  21 APR 2026 23:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1347,7 +1347,7 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 29--42
  [][] 
  []
 
-<assets/icons/red_rounded.png, id=177, 1027.84pt x 1027.84pt>
+<assets/icons/red_rounded.png, id=189, 1027.84pt x 1027.84pt>
 File: assets/icons/red_rounded.png Graphic file (type png)
 <use assets/icons/red_rounded.png>
 Package pdftex.def Info: assets/icons/red_rounded.png  used on input line 56.
@@ -1355,295 +1355,397 @@ Package pdftex.def Info: assets/icons/red_rounded.png  used on input line 56.
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./assets/icons/red_rounded.png>]) (./chapters/titelblad.tex)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./assets/icons/red_rounded.png>]) (./chapters/abstract.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.124     \newpage
-                   [1] (./chapters/abstract.tex) [2] (./chapters/forord.tex) [3] (build/main.toc [4])
+                   [1] (./chapters/forord.tex) [2] (build/main.toc [3])
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
- [5] (./chapters/indledning.tex
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 13.
- [6{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}])
-Overfull \hbox (30.1034pt too wide) in paragraph at lines 40--135
-\T1/lmr/m/n/12 Linket til repo-si-tory: [][]$\T1/lmtt/m/n/12 https : / / github . com / ZBC-[]Slagelse-[]HTX-[]X / teknologi _ a _ projekt$[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--135
-
- []
-
-[7] (./chapters/problemanalyse.tex
-<assets/prisindeks.png, id=274, 602.25pt x 359.84438pt>
-File: assets/prisindeks.png Graphic file (type png)
-<use assets/prisindeks.png>
-Package pdftex.def Info: assets/prisindeks.png  used on input line 18.
-(pdftex.def)             Requested size: 344.005pt x 205.55267pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 19.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 19.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 19.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 19.
+ [4] (./chapters/indledning.tex [5{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 33.
  (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [8] [9
+)
+Overfull \hbox (18.98198pt too wide) in paragraph at lines 35--36
+[]\T1/lmr/m/n/12 Hvordan kan pro-duk-tet mar-keds-fø-res ef-fek-tivt gen-nem Growth Hacking-principper,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+
+Overfull \hbox (30.1034pt too wide) in paragraph at lines 44--46
+[]\T1/lmr/m/n/12 Linket til repo-si-tory: [][]$\T1/lmtt/m/n/12 https : / / github . com / ZBC-[]Slagelse-[]HTX-[]X / teknologi _ a _ projekt$[][] 
+ []
+
+) [6{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [7] (./chapters/problemanalyse.tex
+<assets/prisindeks.png, id=288, 602.25pt x 359.84438pt>
+File: assets/prisindeks.png Graphic file (type png)
+<use assets/prisindeks.png>
+Package pdftex.def Info: assets/prisindeks.png  used on input line 16.
+(pdftex.def)             Requested size: 344.005pt x 205.55267pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 17.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 17.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 17.
+ [8] [9
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.53 
+l.51 
       <./assets/prisindeks.png>] [10{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.70 
-     ]) [11] (./chapters/produktprincip.tex
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
+l.68 
+     ]) [11] (./chapters/produktprincip.tex [12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 []|\T1/lmr/m/n/10.95 Router-overvågning (via
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--43
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 []|\T1/lmr/m/n/10.95 Data fra al-le hjemme-
  []
 
 
-Underfull \hbox (badness 1939) in paragraph at lines 43--43
+Underfull \hbox (badness 1939) in paragraph at lines 77--77
 []|\T1/lmr/m/n/10.95 Kræver hardwa-re + app
  []
 
-[12] [13
+[14
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.68 
-     ]
-<assets/excel_20_update.png, id=333, 1134.2375pt x 565.11125pt>
+l.99 \end{enumerate}
+                    ]
+<assets/excel_20_update.png, id=349, 1134.2375pt x 565.11125pt>
 File: assets/excel_20_update.png Graphic file (type png)
 <use assets/excel_20_update.png>
-Package pdftex.def Info: assets/excel_20_update.png  used on input line 73.
+Package pdftex.def Info: assets/excel_20_update.png  used on input line 107.
 (pdftex.def)             Requested size: 430.00462pt x 214.23575pt.
-) [14
+) [15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.144     \newpage
-                   <./assets/excel_20_update.png (PNG copy)>] (./chapters/produktudformning.tex
-<assets/trinvis_forbedring.png, id=339, 360.59718pt x 114.4275pt>
+l.140 
+       <./assets/excel_20_update.png (PNG copy)>] [16] (./chapters/produktudformning.tex
+<assets/trinvis_forbedring.png, id=360, 360.59718pt x 114.4275pt>
 File: assets/trinvis_forbedring.png Graphic file (type png)
 <use assets/trinvis_forbedring.png>
 Package pdftex.def Info: assets/trinvis_forbedring.png  used on input line 11.
 (pdftex.def)             Requested size: 215.0023pt x 68.22575pt.
-<assets/low_fi_frame0_skitse_1.png, id=342, 492.84125pt x 782.925pt>
-File: assets/low_fi_frame0_skitse_1.png Graphic file (type png)
-<use assets/low_fi_frame0_skitse_1.png>
-Package pdftex.def Info: assets/low_fi_frame0_skitse_1.png  used on input line 28.
-(pdftex.def)             Requested size: 215.0023pt x 341.54924pt.
- [15
+ [17
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.31 
-      <./assets/trinvis_forbedring.png>]
-<assets/low_fi_frame0_skitse_2.png, id=350, 477.785pt x 765.86125pt>
+l.29 \begin{landscape}
+                       <./assets/trinvis_forbedring.png>]
+<assets/low_fi_frame0_skitse_1.png, id=370, 492.84125pt x 782.925pt>
+File: assets/low_fi_frame0_skitse_1.png Graphic file (type png)
+<use assets/low_fi_frame0_skitse_1.png>
+Package pdftex.def Info: assets/low_fi_frame0_skitse_1.png  used on input line 32.
+(pdftex.def)             Requested size: 215.0023pt x 341.54924pt.
+<assets/low_fi_frame0_skitse_2.png, id=371, 477.785pt x 765.86125pt>
 File: assets/low_fi_frame0_skitse_2.png Graphic file (type png)
 <use assets/low_fi_frame0_skitse_2.png>
-Package pdftex.def Info: assets/low_fi_frame0_skitse_2.png  used on input line 34.
+Package pdftex.def Info: assets/low_fi_frame0_skitse_2.png  used on input line 33.
 (pdftex.def)             Requested size: 215.0023pt x 344.63437pt.
- [16
+<assets/low_fi_frame0_skitse_3.png, id=372, 527.9725pt x 759.83875pt>
+File: assets/low_fi_frame0_skitse_3.png Graphic file (type png)
+<use assets/low_fi_frame0_skitse_3.png>
+Package pdftex.def Info: assets/low_fi_frame0_skitse_3.png  used on input line 34.
+(pdftex.def)             Requested size: 215.0023pt x 309.41415pt.
+ [18
+
+ <./assets/low_fi_frame0_skitse_1.png (PNG copy)> <./assets/low_fi_frame0_skitse_2.png (PNG copy)> <./assets/low_fi_frame0_skitse_3.png (PNG copy)>]
+<assets/skitse_af_app.png, id=378, 1241.63875pt x 848.16875pt>
+File: assets/skitse_af_app.png Graphic file (type png)
+<use assets/skitse_af_app.png>
+Package pdftex.def Info: assets/skitse_af_app.png  used on input line 40.
+(pdftex.def)             Requested size: 344.005pt x 234.98782pt.
+<assets/hifi-skitser/prototype.jpg, id=382, 177.5191pt x 384.38803pt>
+File: assets/hifi-skitser/prototype.jpg Graphic file (type jpg)
+<use assets/hifi-skitser/prototype.jpg>
+Package pdftex.def Info: assets/hifi-skitser/prototype.jpg  used on input line 67.
+(pdftex.def)             Requested size: 258.00539pt x 558.72084pt.
+ [19
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.37 
-      <./assets/low_fi_frame0_skitse_1.png (PNG copy)>]
-<assets/low_fi_frame0_skitse_3.png, id=356, 527.9725pt x 759.83875pt>
-File: assets/low_fi_frame0_skitse_3.png Graphic file (type png)
-<use assets/low_fi_frame0_skitse_3.png>
-Package pdftex.def Info: assets/low_fi_frame0_skitse_3.png  used on input line 40.
-(pdftex.def)             Requested size: 215.0023pt x 309.41415pt.
- [17
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.43 
-      <./assets/low_fi_frame0_skitse_2.png (PNG copy)>]
-<assets/lowfi_skitse_4.jpg, id=362, 1219.55624pt x 1626.075pt>
-File: assets/lowfi_skitse_4.jpg Graphic file (type jpg)
-<use assets/lowfi_skitse_4.jpg>
-Package pdftex.def Info: assets/lowfi_skitse_4.jpg  used on input line 46.
-(pdftex.def)             Requested size: 215.0023pt x 286.65158pt.
- [18
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.64 
+l.71 
      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.64 
-      <./assets/low_fi_frame0_skitse_3.png (PNG copy)> <./assets/lowfi_skitse_4.jpg>] [19
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.82 
-     ] [20]
-<assets/teknisk_dyn_skitse.png, id=396, 431.6125pt x 935.495pt>
+l.71 
+      <./assets/skitse_af_app.png>] [20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.75 
+      <./assets/hifi-skitser/prototype.jpg>] [21] [22]
+<assets/teknisk_dyn_skitse.png, id=416, 431.6125pt x 935.495pt>
 File: assets/teknisk_dyn_skitse.png Graphic file (type png)
 <use assets/teknisk_dyn_skitse.png>
-Package pdftex.def Info: assets/teknisk_dyn_skitse.png  used on input line 129.
+Package pdftex.def Info: assets/teknisk_dyn_skitse.png  used on input line 128.
 (pdftex.def)             Requested size: 215.0023pt x 466.00485pt.
- [21{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [22
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+ [23] [24
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.142 
+l.141 
        <./assets/teknisk_dyn_skitse.png>]
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 151.
- (/usr/share/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+\pydata@fh@0=\write9
+\openout9 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
+
+runsystem(latexminted config  --timestamp 20260421231522 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+
+ (build/_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted)
+runsystem(latexminted cleanconfig  --timestamp 20260421231522 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+
+ (./build/_minted/default.style.minted) (./build/_minted/BAADC13AE5552FD8ED5F89FCDCFB0069.highlight.minted
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 2.
 )
-<assets/usage_flowchart.png, id=415, 3200.95876pt x 6348.71875pt>
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 157.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 157.
+<assets/usage_flowchart.png, id=437, 3221.03375pt x 6348.71875pt>
 File: assets/usage_flowchart.png Graphic file (type png)
 <use assets/usage_flowchart.png>
-Package pdftex.def Info: assets/usage_flowchart.png  used on input line 162.
-(pdftex.def)             Requested size: 258.00539pt x 511.68596pt.
- [23
-pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.165 
-      ] [24
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+Package pdftex.def Info: assets/usage_flowchart.png  used on input line 166.
+(pdftex.def)             Requested size: 258.00539pt x 508.48912pt.
+ [25
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.170 
-       <./assets/usage_flowchart.png>]
-<assets/data_page_graph.jpg, id=437, 1445.4pt x 3131.7pt>
-File: assets/data_page_graph.jpg Graphic file (type jpg)
-<use assets/data_page_graph.jpg>
-Package pdftex.def Info: assets/data_page_graph.jpg  used on input line 175.
-(pdftex.def)             Requested size: 258.00539pt x 558.99867pt.
- [25
-pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+      ] [26
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.184 
-       <./assets/data_page_graph.jpg>]
-<assets/proto_1_comp.png, id=443, 865.2325pt x 935.495pt>
+l.176 U
+       nder motorhjelmen benytter vi igen et gratis-open-soruce modul: \text... <./assets/usage_flowchart.png>] (./build/_minted/D515CC5B493792ED3AC8D2C68CD367E8.highlight.minted)
+<assets/hifi-skitser/data-after-yt.jpg, id=455, 1445.4pt x 3131.7pt>
+File: assets/hifi-skitser/data-after-yt.jpg Graphic file (type jpg)
+<use assets/hifi-skitser/data-after-yt.jpg>
+Package pdftex.def Info: assets/hifi-skitser/data-after-yt.jpg  used on input line 202.
+(pdftex.def)             Requested size: 258.00539pt x 558.99867pt.
+ [27] [28
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.210 
+       <./assets/hifi-skitser/data-after-yt.jpg>]
+<assets/proto_1_comp.png, id=467, 865.2325pt x 935.495pt>
 File: assets/proto_1_comp.png Graphic file (type png)
 <use assets/proto_1_comp.png>
-Package pdftex.def Info: assets/proto_1_comp.png  used on input line 187.
+Package pdftex.def Info: assets/proto_1_comp.png  used on input line 213.
 (pdftex.def)             Requested size: 387.00153pt x 100.26942pt.
-) [26
-pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+) [29
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.148     \newpage
-                   <./assets/proto_1_comp.png>] (./chapters/miljÃ¸_overvejelser.tex) [27
+l.145     \newpage
+                   <./assets/proto_1_comp.png>] (./chapters/produktionsforberedelse.tex) [30] (./chapters/miljÃ¸_overvejelser.tex) [31
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.152     \newpage
-                  ] [28] (./chapters/marketing.tex [29] [30] [31]
-<assets/skitse_v1.jpg, id=480, 1219.55624pt x 1626.075pt>
+l.153     \newpage
+                  ] [32] (./chapters/marketing.tex [33] [34] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+<assets/skitse_v1.jpg, id=512, 1219.55624pt x 1626.075pt>
 File: assets/skitse_v1.jpg Graphic file (type jpg)
 <use assets/skitse_v1.jpg>
-Package pdftex.def Info: assets/skitse_v1.jpg  used on input line 120.
+Package pdftex.def Info: assets/skitse_v1.jpg  used on input line 150.
 (pdftex.def)             Requested size: 301.00192pt x 401.33208pt.
- [32]
-<assets/skitse_v2.jpg, id=485, 1219.55624pt x 1626.075pt>
-File: assets/skitse_v2.jpg Graphic file (type jpg)
-<use assets/skitse_v2.jpg>
-Package pdftex.def Info: assets/skitse_v2.jpg  used on input line 126.
-(pdftex.def)             Requested size: 301.00192pt x 401.33208pt.
- [33
-pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+[37
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.129 
+l.153 
+      ]
+<assets/skitse_v2.jpg, id=518, 1219.55624pt x 1626.075pt>
+File: assets/skitse_v2.jpg Graphic file (type jpg)
+<use assets/skitse_v2.jpg>
+Package pdftex.def Info: assets/skitse_v2.jpg  used on input line 156.
+(pdftex.def)             Requested size: 301.00192pt x 401.33208pt.
+ [38
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.159 
        <./assets/skitse_v1.jpg>]
 File: assets/icons/red_rounded.png Graphic file (type png)
 <use assets/icons/red_rounded.png>
-Package pdftex.def Info: assets/icons/red_rounded.png  used on input line 133.
+Package pdftex.def Info: assets/icons/red_rounded.png  used on input line 163.
 (pdftex.def)             Requested size: 171.99922pt x 171.98586pt.
-) [34
-pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
+) [39
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.157     \newpage
                   
-pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.157     \newpage
-                   <./assets/skitse_v2.jpg>] [35] (./chapters/appendiks.tex [36] [37]
-<../latex-document/assets/skitse_af_app.png, id=525, 1241.63875pt x 848.16875pt>
+                   <./assets/skitse_v2.jpg>] [40] [41] (./chapters/appendiks.tex [42] [43]
+<../latex-document/assets/skitse_af_app.png, id=562, 1241.63875pt x 848.16875pt>
 File: ../latex-document/assets/skitse_af_app.png Graphic file (type png)
 <use ../latex-document/assets/skitse_af_app.png>
 Package pdftex.def Info: ../latex-document/assets/skitse_af_app.png  used on input line 49.
 (pdftex.def)             Requested size: 544.92926pt x 372.23769pt.
- [38
+ [44
 
  <../latex-document/assets/skitse_af_app.png>]
-<assets/proto_0001_home.png, id=530, 431.6125pt x 935.495pt>
+<assets/proto_0001_home.png, id=567, 431.6125pt x 935.495pt>
 File: assets/proto_0001_home.png Graphic file (type png)
 <use assets/proto_0001_home.png>
 Package pdftex.def Info: assets/proto_0001_home.png  used on input line 60.
 (pdftex.def)             Requested size: 215.0023pt x 466.00485pt.
-<assets/proto_1_home.png, id=531, 431.6125pt x 935.495pt>
+<assets/proto_1_home.png, id=568, 431.6125pt x 935.495pt>
 File: assets/proto_1_home.png Graphic file (type png)
 <use assets/proto_1_home.png>
 Package pdftex.def Info: assets/proto_1_home.png  used on input line 67.
 (pdftex.def)             Requested size: 215.0023pt x 466.00485pt.
- [39
+ [45
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.70 
-      <./assets/proto_0001_home.png>] [40
-pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
+      <./assets/proto_0001_home.png>] [46
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.72 \newpage
+l.71 \newpage
               <./assets/proto_1_home.png>]
+<assets/data_page_graph.jpg, id=580, 1445.4pt x 3131.7pt>
 File: assets/data_page_graph.jpg Graphic file (type jpg)
 <use assets/data_page_graph.jpg>
-Package pdftex.def Info: assets/data_page_graph.jpg  used on input line 76.
+Package pdftex.def Info: assets/data_page_graph.jpg  used on input line 75.
 (pdftex.def)             Requested size: 215.0023pt x 465.8163pt.
- [41] [42
-pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+ [47] [48
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.80 \newpage
-             ]) [43]
-runsystem(latexminted cleantemp  --timestamp 20260421095031 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+l.79 \newpage
+              <./assets/data_page_graph.jpg>] (./build/_minted/3F83A00CA0129D84E7D3A77AA47A972F.highlight.minted
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 2.
+ (/usr/share/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) [49] [50] [51] [52]
+<assets/hifi-skitser/home-before-yt.jpg, id=608, 1445.4pt x 3131.7pt>
+File: assets/hifi-skitser/home-before-yt.jpg Graphic file (type jpg)
+<use assets/hifi-skitser/home-before-yt.jpg>
+Package pdftex.def Info: assets/hifi-skitser/home-before-yt.jpg  used on input line 175.
+(pdftex.def)             Requested size: 215.0023pt x 465.8163pt.
+<assets/hifi-skitser/edit_before_yt.jpg, id=609, 1445.4pt x 3131.7pt>
+File: assets/hifi-skitser/edit_before_yt.jpg Graphic file (type jpg)
+<use assets/hifi-skitser/edit_before_yt.jpg>
+Package pdftex.def Info: assets/hifi-skitser/edit_before_yt.jpg  used on input line 176.
+(pdftex.def)             Requested size: 215.0023pt x 465.8163pt.
+<assets/hifi-skitser/edit-opret.jpg, id=610, 1445.4pt x 3131.7pt>
+File: assets/hifi-skitser/edit-opret.jpg Graphic file (type jpg)
+<use assets/hifi-skitser/edit-opret.jpg>
+Package pdftex.def Info: assets/hifi-skitser/edit-opret.jpg  used on input line 177.
+(pdftex.def)             Requested size: 215.0023pt x 465.8163pt.
 
- (build/main.aux)
+
+LaTeX Warning: Float too large for page by 42.61166pt on input line 178.
+
+[53 <./assets/hifi-skitser/home-before-yt.jpg> <./assets/hifi-skitser/edit_before_yt.jpg> <./assets/hifi-skitser/edit-opret.jpg>]
+<assets/hifi-skitser/edit-opret-dropdown.jpg, id=615, 1445.4pt x 3131.7pt>
+File: assets/hifi-skitser/edit-opret-dropdown.jpg Graphic file (type jpg)
+<use assets/hifi-skitser/edit-opret-dropdown.jpg>
+Package pdftex.def Info: assets/hifi-skitser/edit-opret-dropdown.jpg  used on input line 183.
+(pdftex.def)             Requested size: 215.0023pt x 465.8163pt.
+File: assets/hifi-skitser/data-after-yt.jpg Graphic file (type jpg)
+<use assets/hifi-skitser/data-after-yt.jpg>
+Package pdftex.def Info: assets/hifi-skitser/data-after-yt.jpg  used on input line 184.
+(pdftex.def)             Requested size: 215.0023pt x 465.8163pt.
+<assets/hifi-skitser/edit.jpg, id=616, 1445.4pt x 3131.7pt>
+File: assets/hifi-skitser/edit.jpg Graphic file (type jpg)
+<use assets/hifi-skitser/edit.jpg>
+Package pdftex.def Info: assets/hifi-skitser/edit.jpg  used on input line 185.
+(pdftex.def)             Requested size: 215.0023pt x 465.8163pt.
+
+
+LaTeX Warning: Float too large for page by 42.61166pt on input line 186.
+
+[54 <./assets/hifi-skitser/edit-opret-dropdown.jpg> <./assets/hifi-skitser/edit.jpg>]
+<assets/hifi-skitser/data.jpg, id=622, 1445.4pt x 3131.7pt>
+File: assets/hifi-skitser/data.jpg Graphic file (type jpg)
+<use assets/hifi-skitser/data.jpg>
+Package pdftex.def Info: assets/hifi-skitser/data.jpg  used on input line 190.
+(pdftex.def)             Requested size: 215.0023pt x 465.8163pt.
+<assets/hifi-skitser/profile.jpg, id=623, 1445.4pt x 3131.7pt>
+File: assets/hifi-skitser/profile.jpg Graphic file (type jpg)
+<use assets/hifi-skitser/profile.jpg>
+Package pdftex.def Info: assets/hifi-skitser/profile.jpg  used on input line 191.
+(pdftex.def)             Requested size: 215.0023pt x 465.8163pt.
+
+
+LaTeX Warning: Float too large for page by 42.61166pt on input line 192.
+
+[55 <./assets/hifi-skitser/data.jpg> <./assets/hifi-skitser/profile.jpg>]) (build/main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 807EAC060FBA1E683A2FBD8CB4EB3139;6834.
+(rerunfilecheck)             Checksum: 2141D2A1FA3AC7B307D6AEBE4FAAF47D;7312.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39924 strings out of 468391
- 776780 string characters out of 5444094
- 1704051 words of memory out of 5000000
- 67925 multiletter control sequences out of 15000+600000
- 716231 words of font info for 102 fonts, out of 8000000 for 9000
+ 40091 strings out of 468391
+ 786739 string characters out of 5444094
+ 1700077 words of memory out of 5000000
+ 68068 multiletter control sequences out of 15000+600000
+ 719859 words of font info for 105 fonts, out of 8000000 for 9000
  600 hyphenation exceptions out of 8191
- 95i,12n,108p,1937b,2247s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,13n,108p,1937b,2267s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.13} has been referenced but does not exist, replaced by a fixed one
 
@@ -1683,11 +1785,11 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
-</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on build/main.pdf (44 pages, 2393263 bytes).
+</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on build/main.pdf (56 pages, 3221456 bytes).
 PDF statistics:
- 661 PDF objects out of 1000 (max. 8388607)
- 553 compressed objects within 6 object streams
- 158 named destinations out of 1000 (max. 500000)
- 440 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 745 PDF objects out of 1000 (max. 8388607)
+ 609 compressed objects within 7 object streams
+ 161 named destinations out of 1000 (max. 500000)
+ 509 words of extra memory for PDF output out of 10000 (max. 10000000)
 
