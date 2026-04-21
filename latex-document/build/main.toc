@@ -40,3 +40,4 @@
 \contentsline {section}{\numberline {C}Første skitse af applikation}{38}{appendix.1.C}%
 \contentsline {section}{\numberline {D}skitse af navbar til a/b test}{39}{appendix.1.D}%
 \contentsline {section}{\numberline {E}Skærmbillede af data-side}{41}{appendix.1.E}%
+\contentsline {section}{\numberline {F}Kildekode dataindsamling}{43}{appendix.1.F}%
