@@ -11,7 +11,6 @@ export default function ModalScreen() {
       <RNView style={{ marginTop: 20 }}>
         <Button title="Close" onPress={() => router.back()} />
       </RNView>
-      {/* Use a light status bar on iOS to account for the black space above the modal */}
       <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
     </View>
   );

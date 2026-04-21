@@ -1,45 +1,42 @@
 \babel@toc {danish}{}\relax 
 \contentsline {section}{\numberline {1}Indledning}{6}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Problemidentifikation}{6}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Afgrænsning}{8}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Problemformulering}{8}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Projektstyringsværktøj}{8}{subsection.1.4}%
-\contentsline {section}{\numberline {2}Problemanalyse}{9}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Økonomiske udfordringer i samfundet}{9}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Abonnementers psykologiske effekter }{10}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Subscription fatigue}{12}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Produkt idéer}{13}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Brainstorm over mulige produktideer}{13}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Produktprincip}{14}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Grundidé}{14}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Konkurrenter}{14}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Målgruppe}{14}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Brugergrænseflade (UI/UX)}{15}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}LowFi-Prototyper}{15}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Digital produktskitse}{17}{subsubsection.4.4.2}%
-\contentsline {section}{\numberline {5}Produktudvikling}{19}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Overordnet om produktudvikling}{19}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Implementering af applikationen}{19}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Systemarkitektur}{20}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Brugergrænseflade (UI/UX)}{20}{subsubsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}Dynamisk opbygning}{21}{subsubsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.3}Dataindsamling}{22}{subsubsection.5.3.3}%
-\contentsline {subsubsection}{\numberline {5.3.4}Analyse og datavisualiseringsfunktion}{23}{subsubsection.5.3.4}%
-\contentsline {subsubsection}{\numberline {5.3.5}A/B test af navigationsbjælke}{23}{subsubsection.5.3.5}%
-\contentsline {subsubsection}{\numberline {5.3.6}A/B Testing}{24}{subsubsection.5.3.6}%
-\contentsline {subsection}{\numberline {5.4}Usibility Test / User tests}{24}{subsection.5.4}%
-\contentsline {section}{\numberline {6}Miljøovervejelser}{25}{section.6}%
-\contentsline {section}{\numberline {7}Markedsføring}{27}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Konkurrentanalyse}{28}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Vores position i markedet}{29}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Markedsmuligheder i Danmark}{30}{subsubsection.7.1.2}%
-\contentsline {subsubsection}{\numberline {7.1.3}Kort vurdering}{30}{subsubsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.2}Logo og brandidentitet}{30}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Logo design}{30}{subsubsection.7.2.1}%
-\contentsline {section}{Litteraturliste}{33}{section*.8}%
-\contentsline {section}{Appendiks}{34}{section*.9}%
-\contentsline {section}{\numberline {A}Appendiks}{34}{appendix.1.A}%
-\contentsline {section}{\numberline {B}HV-modellen}{34}{appendix.1.B}%
-\contentsline {section}{\numberline {C}Første skitse af applikation}{36}{appendix.1.C}%
-\contentsline {section}{\numberline {D}skitse af navbar til a/b test}{37}{appendix.1.D}%
-\contentsline {section}{\numberline {E}Skærmbillede af data-side}{39}{appendix.1.E}%
+\contentsline {subsection}{\numberline {1.1}Afgrænsning}{7}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Problemformulering}{7}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Projektstyringsværktøj}{7}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Problemanalyse}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Økonomiske udfordringer i samfundet}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Abonnementers psykologiske effekter }{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Subscription fatigue}{11}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Produktprincip}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Grundidé}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Målgruppe}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Brainstorm over mulige produktideer}{12}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Produktudvikling}{15}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Overordnet om produktudvikling}{15}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Brugergrænseflade (UI/UX)}{15}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}LowFi-Prototyper}{15}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Digital produktskitse}{19}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Implementering af applikationen}{20}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Systemarkitektur}{20}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Implementering af brugergrænseflade}{21}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Dynamisk opbygning}{21}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Dataindsamling}{22}{subsubsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Analyse og datavisualiseringsfunktion}{24}{subsubsection.4.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.5}A/B test af navigationsbjælke}{26}{subsubsection.4.4.5}%
+\contentsline {subsubsection}{\numberline {4.4.6}A/B Testing}{26}{subsubsection.4.4.6}%
+\contentsline {subsection}{\numberline {4.5}Usibility Test / User tests}{26}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Miljøovervejelser}{27}{section.5}%
+\contentsline {section}{\numberline {6}Markedsføring}{29}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Konkurrentanalyse}{30}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Vores position i markedet}{31}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Markedsmuligheder i Danmark}{32}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Kort vurdering}{32}{subsubsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}Logo og brandidentitet}{32}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Logo design}{32}{subsubsection.6.2.1}%
+\contentsline {section}{Litteraturliste}{35}{section*.9}%
+\contentsline {section}{Appendiks}{36}{section*.10}%
+\contentsline {section}{\numberline {A}Appendiks}{36}{appendix.1.A}%
+\contentsline {section}{\numberline {B}HV-modellen}{36}{appendix.1.B}%
+\contentsline {section}{\numberline {C}Første skitse af applikation}{38}{appendix.1.C}%
+\contentsline {section}{\numberline {D}skitse af navbar til a/b test}{39}{appendix.1.D}%
+\contentsline {section}{\numberline {E}Skærmbillede af data-side}{41}{appendix.1.E}%

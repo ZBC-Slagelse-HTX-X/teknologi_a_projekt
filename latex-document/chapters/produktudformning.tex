@@ -1,3 +1,6 @@
+
+
+
 \subsection{Overordnet om produktudvikling}
 Udviklingen af et digitalt produkt, som vores, er en kompleks proces og kan ikke realiseres i en lineær proces. Man arbejder derfor altid i en iterativ udviklingsproces, hvor et produkt udvikles i flere iterationer, hvor produktet gennemgår løbende tests, evalueringer og forbedringer.
 
@@ -9,6 +12,76 @@ Iterativ digital-produktudvikling opdeler sig i tre hovedfaser: Planlægning $\r
     \caption{Iterativ udviklingsproces\footfullcite{Damhus2017}}
 \end{figure}
 
+% ################################################################################################################################################################################
+
+\subsection{Brugergrænseflade (UI/UX)}
+I dette afsnit vil vi beskrive processen af udviklingen af appens brugergrænseflade, dens iterationer og de forskellige tests og evalueringer som er blevet foretaget for at forbedre den under udviklingsprocessen.
+
+\subsubsection{LowFi-Prototyper}
+
+Til at starte med har vi lavet 4 papir skitser, som vi ved en spørgeundersøgelse, har fået folk til at svare på. En A/B test hvor vi har fået data fra de forskellige målgrupper. Da vi prøver at målrette på målgruppen 21+ har vi valgt at fokusere på besvarelserne fra dem der er 21+.
+
+120 af de 350 der har besvaret vores spørgeundersøgelses A/B test var 21+ ifølge den afkrydsning de har lavet, i spørgeskemaet. 
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.5\textwidth]{assets/low_fi_frame0_skitse_1.png}}
+    \caption{LowFi skitse 1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.5\textwidth]{assets/low_fi_frame0_skitse_2.png}}
+    \caption{LowFi skitse 2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.5\textwidth]{assets/low_fi_frame0_skitse_3.png}}
+    \caption{LowFi skitse 3}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.5\textwidth, angle=90]{assets/lowfi_skitse_4.jpg}}
+    \caption{LowFi skitse 4}
+    \label{fig:skitse_4}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Skitse} & \textbf{Andel af besvarelser} \\ \hline
+Skitse 1 & 23\% \\ \hline
+Skitse 2 & 18\% \\ \hline
+Skitse 3 & 20\% \\ \hline
+Skitse 4 & 39\% \\ \hline
+\end{tabular}
+\caption{Fordeling af foretrukne layouts blandt besvarelser}
+\label{tab:skitser}
+\end{table}
+
+
+\subsubsection{Digital produktskitse}
+Ud fra den Data har vi valgt at fremstille en professionel, high-fidelity, tegning med udgangspunkt fra skitse 4 (figur \ref{fig:skitse_4}), da størstedelen af vores målgruppe valgte den 
+
+Vi har lavet en endelig produktskitse ved brug af Figma, som er et UI/UX designværktøj, som der bliver brugt af nogle verdens største virksomheder (Microsoft, Github, Stripe, Duolingo, m.fl.\footnote{\url{https://www.figma.com/}}) 
+
+Formålet med vores software er at skabe en komfortable brugeroplevelse med mindst mulig støj og hurtigere resultater, vi har fokus på at du ikke skal være på appen i for lang tid, men bruge den som et værktøj i din hverdag, lidt ligesom en tommestok du kun bruger når du skal måle ting op. 
+
+Der er fokus på der er en klar og tydelig brugerflade der fortæller dig præcist hvor du kan behandle dine abonnementer samt give dig svar på ting du søger efter, samt en profilside hvor du skal kunne logge ind og ud. 
+
+Vi går primært efter en ældre (21+ ) målgruppe med vores userinterface, da børn og unge ikke har det samme økonomiske problemer som nye voksne mennesker har. 
+
+Vores interface skal også have muligheden for at vise diagrammer, og statistikker, som skal gøre det nemmere for brugeren at visualisere sit forbrug samt alternativer, for at give et let og overskueligt overblik. 
+
+Vores indkomst fra appen kommer fra at hvis du vil have en detaljeret analyse, som bedre alternativer på dit midlertidige abonnement, har vi tænkt os at anvende OTP (One time purchases) for at give brugeren adgang til de mere eksklusive funktioner. 
+
+Dette One Time purchase kan bestilles hver gang du vil have opdateret din analyse for at gøre det så nemt for dig som muligt, samt dato på dine tidlige r dig som muligt, samt dato på dine tidligere analyser som du også kan tilgå, så du har styr på hvornår du har fået lavet den og hvor relevant den er, denne funktion kan også give os muligheden for at analysere hvor meget du har sparet på at anvende vores ap re analyser som du også kan tilgå, så du har styr på hvornår du har fået lavet den og hvor relevant den er, denne funktion kan også give os muligheden for at analysere hvor meget du har sparet på at anvende vores app hvilket bygger Troværdighed med kunden. 
+
+
+% ################################################################################################################################################################################
 
 \subsection{Implementering af applikationen}
 Vores app som skal håndtere \textit{Subscription Fatigue}, skal overholde følgende tekniske krav:
@@ -28,7 +101,7 @@ Systemerne indeles i forskellige lag og moduler. Ofte i udvikling af applikation
 
 Frontend håndterer alt det visuelle og alle de ting som en bruger kan interagere med. Brugerfladen kaldes UI (User interface) og brugrens oplevelse af brugerfladen kaldes UX(User experience). Backend-laget håndterer alt det som sker i baggrunden på \textit{serveren}, såsom  database, dataindsamling og analyse.
 
-\subsubsection{Brugergrænseflade (UI/UX)}
+\subsubsection{Implementering af brugergrænseflade}
 Brugergrænsefladen håndterer, som førnævnt, alt det visuelle og de interaktive elementer i appen. Disse interaktive elementer er i denne app bla.:
 
 \begin{itemize}
@@ -61,23 +134,28 @@ Eksempeltvis: en side hvor vi ønsker at vise brugeren et overblik over hvor man
 \subsubsection{Dataindsamling}
 Dataindsamlingsdelen af appen er, som nævnt i \ref{sec:krav_stat}, begrænset til android-enheder, da apples regler for indhentning af data er meget strenge.
 
-Før der kan fortages statistik og analyser af brugerens abonomenter, skal vi indhente data om deres forbrug. Dette gøres ved et gratis open-source-modul som giver adgang til androids UsageStats API\footnote{\url{https://github.com/PriyavKaneria/expo-android-usagestats}}(application programming interface)
+Før der kan fortages statistik og analyser af brugerens abonomenter, skal vi indhente data om deres forbrug. Dette gøres ved et gratis open-source-modul som giver adgang til androids UsageStats\footnote{\url{https://github.com/PriyavKaneria/expo-android-usagestats}}-API(application programming interface)
 
 
 
 En implementering af alle abonomenttjenester til appen, vil blive nært umueligt for en person at nå inden for dette projektstidsramme, da alle individuelle tjenester skal kodes individuelt. Vi har derfor valgt at bruge Netflix som eksempel og proof-of-concept.
 
-Ifølges modulets dokumentation\footnote{\url{https://github.com/PriyavKaneria/expo-android-usagestats}} skal appen bruge brugerens tilladelse for at indsamle det pågældende data. Dette gøres ved en funktion \textit{ensureUsagePermission()}
+Ifølges modulets dokumentation\footnote{\url{https://github.com/PriyavKaneria/expo-android-usagestats}} skal appen bruge brugerens tilladelse for at indsamle det pågældende data. Denne tilladelse forspørges via funktionen: \textit{ensureUsagePermission()} (se appendix INSERT REF TO APPENDIX) 
 
+Efter tilladelsen er givet, hentes dataen via \textit{getNetflixUsageToday()} og den returnerer tiden i milisekunder, hvorefter det omregnet til minutter. Et udklip af koden ses på figur \ref{fig:code_snippit_1}. 
 
-\begin{lstlisting}[language=TypeScript]
-// Netflix clienten
-const netflix = stats.find((app) => app.packageName === 'com.netflix.mediaclient');
-...
-// Beregning af forbrug i minutter
-const ms = netflix.totalTimeInForeground ?? 0;
-const minutes = Math.round(ms / 60000);
-\end{lstlisting}
+\begin{figure}
+    \label{fig:code_snippit_1}
+    \begin{lstlisting}[language=TypeScript]
+        // Netflix clienten
+        const netflix = stats.find((app) => app.packageName === 'com.netflix.mediaclient');
+        ...
+        // Beregning af forbrug i minutter
+        const ms = netflix.totalTimeInForeground ?? 0;
+        const minutes = Math.round(ms / 60000);
+    \end{lstlisting}
+    \caption{Kodeudklip fra getUsage.tsx INSET REF TIL APPENDIX }
+\end{figure}
 
 \begin{figure}[H]
     \centering
@@ -86,6 +164,18 @@ const minutes = Math.round(ms / 60000);
 \end{figure}
 
 \subsubsection{Analyse og datavisualiseringsfunktion}
+Tidsrammen af projektet har begrænset udviklingen af selve købe-funktionaliteten af appen, og vi må derfor afgrænse denne del til blot at ilustrere den data som er indsamlet om brugerens forbrug, og det viste sig at være en stor nok udfordring i sig selv. 
+
+Til selve visualiseringen har vi valgt at benytte et circeldiagram, da vi mener at det er en yderst velpassende diagramtype til vores projekt.
+
+Under motorhjelmen benytter vi igen et gratis-open-soruce modul 
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.6\textwidth]{assets/data_page_graph.jpg}}
+    \caption{Datavisualisering}
+\end{figure}
+
 
 
 

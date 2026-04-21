@@ -23,13 +23,27 @@ export default function LgStats() {
 
   // Rebuild chart data from context subscriptions so runtime additions
   // and analysis updates are reflected when this component re-renders.
-  const chartData = subscriptions.map((s, i) => ({
-    name: s.name,
-    minutes_used: s.minutes_used ?? s.price,
-    color: colorPalette[i % colorPalette.length],
-    legendFontColor: "#333",
-    legendFontSize: 14,
-  }));
+  // We compute both the raw minutes (used for the list) and the
+  // percentage (used as the numeric value for the pie chart).
+  const totalMinutes = subscriptions.reduce(
+    (acc, s) => acc + (s.minutes_used ?? s.price),
+    0
+  );
+
+  const chartData = subscriptions.map((s, i) => {
+    const minutes = s.minutes_used ?? s.price;
+    const percentage = totalMinutes > 0 ? +( (minutes / totalMinutes) * 100 ).toFixed(1) : 0;
+    return {
+      name: s.name,
+      minutes_used: minutes,
+      // `percentage` will be used as the numeric accessor for the pie chart
+      // so the numbers shown on the slices represent percent values.
+      percentage,
+      color: colorPalette[i % colorPalette.length],
+      legendFontColor: "#333",
+      legendFontSize: 14,
+    };
+  });
 
   // sort a copy of the data so the list shows least-used subscriptions first
   const sortedData = [...chartData].sort((a, b) => (a.minutes_used ?? 0) - (b.minutes_used ?? 0));
@@ -38,26 +52,34 @@ export default function LgStats() {
     <View style={styles.container}>
       <View style={styles.chartWrapper}>
         <View>
-            <PieChart
-            data={chartData}
-            width={Math.round(screenWidth * 0.4)}
-            height={Math.round((screenWidth * 0.8) * 0.6)}
-            chartConfig={chartConfig}
-            accessor="minutes_used"
-            backgroundColor="transparent"
-            paddingLeft="39"
-            center={[0, 0]}
-            absolute
-            hasLegend={false}
-          />
+              <PieChart
+              data={chartData}
+              width={Math.round(screenWidth * 0.4)}
+              height={Math.round((screenWidth * 0.8) * 0.6)}
+              chartConfig={chartConfig}
+              // use percentage values for slice labels so the numbers shown
+              // on the chart correspond to percent (e.g. 25.3)
+              accessor="percentage"
+              backgroundColor="transparent"
+              paddingLeft="39"
+              center={[0, 0]}
+              absolute
+              hasLegend={false}
+            />
       </View>
       <View style={styles.chartText}>
-        <Text>Dine mindst brugte abonomenter:</Text>
-        <FlatList
-          data={sortedData}
-          keyExtractor={(item, index) => String(index)}
-          renderItem={({ item }) => <Text style={styles.item}>- {item.name} ({item.minutes_used} minutter)</Text>}
-        />
+          <Text>Dine mindst brugte</Text>
+          <Text>abonomenter:</Text>
+          <FlatList
+            data={sortedData}
+            keyExtractor={(item, index) => String(index)}
+            renderItem={({ item }) => (
+              <View style={styles.itemRow}>
+                <View style={[styles.swatch, { backgroundColor: item.color }]} />
+                <Text style={styles.item}>- {item.name} ({item.minutes_used} minutter)</Text>
+              </View>
+            )}
+          />
 
       </View>
       </View>
@@ -84,7 +106,19 @@ const styles = StyleSheet.create({
   chartText: {
     // backgroundColor: "rgba(0, 255, 0, 0.5)",
   },
+  itemRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 4,
+  },
+  swatch: {
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    marginRight: 8,
+  },
   item: {
-    
+    fontSize: 14,
+    color: '#333',
   }
 });

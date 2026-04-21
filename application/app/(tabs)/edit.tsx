@@ -1,205 +1,287 @@
 import { useSubscriptions } from '@/components/SubscriptionsContext';
 import { Text, View } from '@/components/Themed';
 import AntDesign from '@expo/vector-icons/AntDesign';
-import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, StyleSheet, TextInput } from 'react-native';
+import { Alert, Pressable, StyleSheet, TextInput } from 'react-native';
+import Animated, {
+  useAnimatedStyle,
+  useSharedValue,
+  withSpring,
+} from "react-native-reanimated";
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-
 export default function Edit() {
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(false);
   const insets = useSafeAreaInsets();
-  const router = useRouter();
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
   const [openDropdown, setOpenDropdown] = useState(false);
-  const { addSubscription, runAnalysis } = useSubscriptions();
+  const { addSubscription, subscriptions, removeSubscription } = useSubscriptions();
 
-  function createSubscription() {
-    if (!name || !price || !billing) return;
-    
-    const newSub = {
-      id: Date.now().toString(),
-      name,
-      type: "Custom",
-      price: Number(price),
-      billing_cycle: billing
-    };
-  
-    // Add to the shared subscription state via context
-    addSubscription(newSub);
-  
-    // reset inputs
-    setName("");
-    setPrice("");
-    // setBilling("");
-  
-    setModal(false);
-    console.log(name, price, billing)
-}
+  const scale = useSharedValue(1);
+  const scaleBtn = useSharedValue(1);
 
+  const animatedMain = useAnimatedStyle(() => ({
+    transform: [{ scale: scale.value }],
+  }));
+
+  const animatedModalBtn = useAnimatedStyle(() => ({
+    transform: [{ scale: scaleBtn.value }],
+  }));
+
+  const createSubscription = () => {
+    if (!name || !price) return;
+
+    const lower = name.trim().toLowerCase();
+
+    if (lower.includes("youtube")) {
+      addSubscription({
+        id: Date.now().toString(),
+        name,
+        type: "Custom",
+        price: Number(price),
+        billing_cycle: billing,
+        time_used: 0,
+        packageName: "com.google.android.youtube",
+      } as any);
+
+      setName("");
+      setPrice("");
+      setModal(false);
+      return;
+    }
+
+    Alert.alert(
+      "Ikke understøttet",
+      "Dette abonnement er endnu ikke understøttet."
+    );
+  };
 
   return (
-        <View style={[styles.outer_container, { paddingTop: 80 + insets.top }]}>
-          <View style={[styles.container, styles.container_1]}>
-            <Text style={styles.title}>Rediger dit abonnoment her</Text>
-          </View>
-          
-          {/* Nuværende abonnomenter */}
-          <View style={styles.container}>
-            <View style={{flexDirection: 'row', justifyContent: 'space-between', width: '100%', paddingHorizontal: 20}}>
-              <View style={styles.container_2}>
-                <Text>Netflix: 100kr</Text>
-              </View>
-              <View>
-                <Pressable style={styles.buttonStyle}><Text style={{fontSize: 12}}>Opsig</Text></Pressable>
-              </View>
-            </View>
-          </View>
-          
-          <View style={styles.container}>
-            {modal ?
-            <View style={{backgroundColor: "#f0f0f0", width: "90%", height: 300, position: "absolute", zIndex: 10, padding: 10}}>
-              <Pressable onPress={() => setModal(false)}><Text style={{fontSize: 50,position:"absolute", right: 0}}><AntDesign name="close" size={18} color="black" /></Text></Pressable>
-              
-              <TextInput style={{marginTop: 40}}
-                placeholder="Indtast abonomentnavn"
-                value={name}
-                onChangeText={setName}
-              />
-              <TextInput
-                placeholder="Indtast prisen"
-                value={price}
-                onChangeText={setPrice}
-                keyboardType='numeric'
-              />
-              {/* Dropdown */}
+    <View style={[styles.screen, { paddingTop: insets.top + 80,}]}>
+      
+      {/* Title */}
+      <Text style={[styles.title, { "borderRadius": 10, "backgroundColor": "#f0f0f0", "width": "100%", "padding": 15, "textAlign": "center"}]}>Rediger dine abonnementer</Text>
 
-              <View style={{ marginTop: 10 }}>
-              <Pressable
-                onPress={() => setOpenDropdown(prev => !prev)}
-                style={{
-                  borderWidth: 1,
-                  padding: 10,
-                  borderRadius: 5,
-                  backgroundColor: "#fff"
-                }}
-              >
-                <Text>
-                  {billing === "monthly" ? "Månedlig" : "Årlig"}
-                </Text>
+    
+      {/* Subscriptions list */}
+      <View style={{"backgroundColor": "#f0f0f0", "padding": 10, "borderRadius": 10}}>
+        {subscriptions.map((s) => (
+          <View key={s.id} style={styles.card}>
+            <Text>{s.name}: {s.price}kr</Text>
+            <Pressable
+              style={styles.smallButton}
+              onPress={() =>
+                Alert.alert(
+                  'Opsig abonnement',
+                  `Vil du opsige ${s.name}?`,
+                  [
+                    { text: 'Annuller', style: 'cancel' },
+                    { text: 'Opsig', style: 'destructive', onPress: () => removeSubscription(s.id) },
+                  ]
+                )
+              }
+            >
+              <Text style={styles.smallButtonText}>Opsig</Text>
+            </Pressable>
+          </View>
+        ))}
+      </View>
+      {/* Create button */}
+      <Pressable
+        style={{"width": "100%", "marginTop": 15}}
+        onPressIn={() => (scale.value = withSpring(0.96))}
+        onPressOut={() => (scale.value = withSpring(1))}
+        onPress={() => setModal(true)}
+      >
+        <Animated.View style={[styles.primaryBtn, animatedMain]}>
+          <Text style={styles.primaryText}>Opret abonnement</Text>
+        </Animated.View>
+      </Pressable>
+
+      {/* Modal */}
+      {modal && (
+        <View style={styles.overlay}>
+          <View style={styles.modal}>
+            
+            {/* Header */}
+            <View style={styles.modalHeader}>
+              <Text style={styles.modalTitle}>Nyt abonnement</Text>
+              <Pressable onPress={() => setModal(false)}>
+                <AntDesign name="close" size={20} color="#555" />
               </Pressable>
+            </View>
 
-              {/* Options */}
-              {openDropdown && (
-                <View
-                  style={{
-                    borderWidth: 1,
-                    borderTopWidth: 0,
-                    backgroundColor: "#fff"
+            {/* Inputs */}
+            <TextInput
+              style={styles.input}
+              placeholder="Navn"
+              value={name}
+              onChangeText={setName}
+            />
+
+            <TextInput
+              style={styles.input}
+              placeholder="Pris (DKK)"
+              value={price}
+              onChangeText={setPrice}
+              keyboardType="numeric"
+            />
+
+            {/* Dropdown */}
+            <Pressable
+              style={styles.dropdown}
+              onPress={() => setOpenDropdown(!openDropdown)}
+            >
+              <Text>
+                {billing === "monthly" ? "Månedlig" : "Årlig"}
+              </Text>
+            </Pressable>
+
+            {openDropdown && (
+              <View style={styles.dropdownMenu}>
+                <Pressable
+                  style={styles.dropdownItem}
+                  onPress={() => {
+                    setBilling("monthly");
+                    setOpenDropdown(false);
                   }}
                 >
-                  <Pressable
-                    style={{ padding: 10 }}
-                    onPress={() => {
-                      setBilling("monthly");
-                      setOpenDropdown(false);
-                    }}
-                  >
-                    <Text>Månedlig</Text>
-                  </Pressable>
+                  <Text>Månedlig</Text>
+                </Pressable>
 
-                  <Pressable
-                    style={{ padding: 10 }}
-                    onPress={() => {
-                      setBilling("yearly");
-                      setOpenDropdown(false);
-                    }}
-                  >
-                    <Text>Årlig</Text>
-                  </Pressable>
-                </View>
-              )}
-            </View>
-
-
-              <Pressable onPress={createSubscription} style={styles.analyesButtonStyle}><Text>Opret</Text></Pressable>
-            </View>
-            : <></>} 
-            <Pressable style={styles.analyesButtonStyle} onPress={() => setModal(true)}>
-              <Text>Opret</Text>
-            </Pressable>
+                <Pressable
+                  style={styles.dropdownItem}
+                  onPress={() => {
+                    setBilling("yearly");
+                    setOpenDropdown(false);
+                  }}
+                >
+                  <Text>Årlig</Text>
+                </Pressable>
+              </View>
+            )}
             
-          </View>
-    
-          <View style={[styles.container, styles.container_3]}>
-              <Pressable style={styles.analyesButtonStyle} onPress={() => runAnalysis()}>
-                <Text style={[{fontSize: 20}]}>Køb Ny Analyse</Text>
-              </Pressable>
+            {/* Submit */}
+            <Pressable
+              onPressIn={() => (scaleBtn.value = withSpring(0.96))}
+              onPressOut={() => (scaleBtn.value = withSpring(1))}
+              onPress={createSubscription}
+            >
+              <Animated.View style={[styles.primaryBtn, animatedModalBtn]}>
+                <Text style={styles.primaryText}>Opret</Text>
+              </Animated.View>
+            </Pressable>
+
           </View>
         </View>
+      )}
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  outer_container: {
+  screen: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
+    alignItems: "center",
+    paddingHorizontal: 20,
   },
-  container: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 20,
-    borderWidth: 1,
-    borderColor: '#000',
-    width: '90%',
-    marginBottom: 20,
-    },
-    container_1: {
-      borderColor: '#000',
-      backgroundColor: '#f0f0f0',
-      padding: 10,
-      alignItems: 'stretch',
-    },
-    container_2: {
-      display: 'flex',
-      justifyContent: "center",
-    },
-    container_3: {
-      padding: 0,
-      borderColor: '#fff',
-    },
+
   title: {
-    fontSize: 20,
-    fontWeight: '600',
+    fontSize: 22,
+    fontWeight: "600",
+    marginBottom: 20,
   },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+
+  card: {
+    backgroundColor: "#fff",
+    width: "100%",
+    padding: 10,
+    borderRadius: 10,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 10,
   },
-  buttonStyle: {
+
+  smallButton: {
+    backgroundColor: "red",
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 8,
+  },
+
+  smallButtonText: {
+    fontSize: 12,
+    color: "#fff",
+  },
+
+  primaryBtn: {
+    backgroundColor: "#ff3b30",
+    padding: 16,
+    borderRadius: 14,
+    alignItems: "center",
+    width: "100%",
+  },
+
+  primaryText: {
+    color: "#fff",
+    fontWeight: "600",
+  },
+
+  overlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: "rgba(0,0,0,0.4)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  modal: {
+    width: "90%",
+    backgroundColor: "#fff",
+    borderRadius: 20,
+    padding: 20,
+  },
+
+  modalHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginBottom: 15,
+  },
+
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: "600",
+  },
+
+  input: {
+    backgroundColor: "#f5f5f5",
+    padding: 12,
+    borderRadius: 12,
+    marginBottom: 10,
+  },
+
+  dropdown: {
+    backgroundColor: "#f5f5f5",
+    padding: 12,
+    borderRadius: 12,
+    marginBottom: 10,
+  },
+
+  dropdownMenu: {
+    backgroundColor: "#fff",
+    borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#000',  
-    backgroundColor: '#FFFFFF',
-    borderRadius: 5,
-    padding: 5,
-    paddingLeft: 10,
-    paddingRight: 10,
+    borderColor: "#eee",
+    marginBottom: 10,
   },
-  analyesButtonStyle: {
-    borderWidth: 1,
-    borderColor: '#000',  
-    alignSelf: 'stretch',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '100%',
-    backgroundColor: '#FFFFFF',
-    borderRadius: 5,
-    height: 50,
-    padding: 0,
+
+  dropdownItem: {
+    padding: 12,
   },
 });

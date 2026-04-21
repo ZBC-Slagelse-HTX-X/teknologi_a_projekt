@@ -3,7 +3,9 @@ export type Subscription = {
   name: string;
   type: string;
   price: number;
+  time_used: number;
   billing_cycle: "monthly" | "yearly";
+  packageName?: string;
 };
 
 export const subscriptions: Subscription[] = [
@@ -12,28 +14,31 @@ export const subscriptions: Subscription[] = [
     name: "Netflix",
     type: "Streaming",
     price: 79,
-    billing_cycle: "monthly"
+    billing_cycle: "monthly",
+    time_used: 0,
+    packageName: 'com.netflix.mediaclient',
   },
   {
     id: "2",
     name: "Spotify",
     type: "Music",
     price: 99,
-    billing_cycle: "monthly"
+    billing_cycle: "monthly",
+    time_used: 0,
+    packageName: 'com.spotify.music',
   },
   {
     id: "3",
-    name: "Viaplay",
+    name: "Tv2 Play",
     type: "Streaming",
     price: 129,
-    billing_cycle: "monthly"
+    billing_cycle: "monthly",
+    time_used: 0,
+    packageName: 'dk.tv2.tv2play',
   }
 ];
 
-// Helper to add subscriptions at runtime so other modules can import and
-// read the same array reference. Keep this simple: push into the exported
-// array and return the new item. Consumers that keep local React state should
-// also update their state as needed (Edit.tsx does this).
+
 export function addSubscription(sub: Subscription) {
   subscriptions.push(sub);
   return sub;

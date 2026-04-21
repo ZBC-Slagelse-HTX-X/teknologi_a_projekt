@@ -1,12 +1,12 @@
-import React from 'react';
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Tabs } from 'expo-router';
-import { Platform, StyleSheet, View, Text } from 'react-native';
-import { BlurView } from 'expo-blur';
-import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import Colors from '@/constants/Colors';
 import { Ionicons } from "@expo/vector-icons";
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { BlurView } from 'expo-blur';
+import { Tabs } from 'expo-router';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 
 function TabBarIcon(props: {
@@ -21,7 +21,6 @@ export default function TabLayout() {
   const insets = useSafeAreaInsets();
 
   const tintColor = Colors[colorScheme ?? 'light'].tint;
-  const tabBarHeight = 60; // custom tab bar height
 
   return (
     <View style={styles.container}>
@@ -30,7 +29,6 @@ export default function TabLayout() {
           headerShown: false,
           tabBarPosition: 'top',
 
-          // This is the key: make the native tab bar completely invisible
           tabBarStyle: { position: 'absolute', top: 0, left: 0, right: 0, height: 0, opacity: 0 },
 
           tabBarActiveTintColor: tintColor,
@@ -44,7 +42,6 @@ export default function TabLayout() {
           },
         }}
 
-        // Fully custom tabBar component
         tabBar={({ state, descriptors, navigation }) => {
           const focusedIndex = state.index;
 
@@ -55,7 +52,7 @@ export default function TabLayout() {
               style={[
                 styles.floatingTabBar,
                 {
-                  top: insets.top + 12, // safe area + a little breathing room
+                  top: insets.top + 12,
                   marginHorizontal: 20,
                   borderRadius: 10,
                   overflow: 'hidden',
@@ -87,7 +84,6 @@ export default function TabLayout() {
                         styles.tabItem,
                         isFocused && styles.tabItemActive,
                       ]}
-                      // @ts-ignore – accessibility props exist
                       accessibilityRole="button"
                       accessibilityState={isFocused ? { selected: true } : {}}
                       accessibilityLabel={options.tabBarAccessibilityLabel}
@@ -96,7 +92,6 @@ export default function TabLayout() {
                       {options.tabBarIcon?.({ color: isFocused ? tintColor : '#8e8e93', focused: isFocused, size: 26 })}
                       {options.title && (
                         <View style={styles.label}>
-                          {/* You can render text here if you want labels under icons */}
                         </View>
                       )}
                     </View>
@@ -107,7 +102,6 @@ export default function TabLayout() {
           );
         }}
       >
-        {/* Your screens */}
         <Tabs.Screen
           name="index"
           options={{

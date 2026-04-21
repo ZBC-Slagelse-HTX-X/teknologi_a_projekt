@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "application",
-    "slug": "application",
+    "name": "Subscription Pilot",
+    "slug": "subscription-pilot",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/full_red.png",
-    "scheme": "application",
+    "scheme": "subscription_pilot",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
@@ -43,8 +43,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "1a1bb658-7be6-44fa-8adf-5a542c5a9306"
+        "projectId": "76bdec58-8151-4f59-895f-00fee1d4088d"
       }
-    }
+    },
+    "owner": "jep1x"
   }
 }

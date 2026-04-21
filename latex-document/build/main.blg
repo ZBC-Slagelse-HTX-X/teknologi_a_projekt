@@ -21,49 +21,48 @@ Database file #1: main-blx.bib
 Database file #2: bibliography.bib
 Warning--I'm ignoring Damhus2017's extra "note" field
 --line 54 of file bibliography.bib
-Warning--I didn't find a database entry for "biblatex-control"
 Biblatex version: 3.21
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 7 entries,
+You've used 8 entries,
             6402 wiz_defined-function locations,
-            1254 strings with 11695 characters,
-and the built_in function-call counts, 61480 in all, are:
-= -- 4965
-> -- 974
-< -- 204
-+ -- 1962
-- -- 424
-* -- 4495
-:= -- 7390
+            1255 strings with 11748 characters,
+and the built_in function-call counts, 62805 in all, are:
+= -- 5059
+> -- 908
+< -- 222
++ -- 1943
+- -- 363
+* -- 4521
+:= -- 7617
 add.period$ -- 0
-call.type$ -- 7
-change.case$ -- 60
-chr.to.int$ -- 24
+call.type$ -- 8
+change.case$ -- 76
+chr.to.int$ -- 66
 cite$ -- 14
-duplicate$ -- 6532
-empty$ -- 5108
-format.name$ -- 594
-if$ -- 12148
+duplicate$ -- 6660
+empty$ -- 5318
+format.name$ -- 540
+if$ -- 12414
 int.to.chr$ -- 0
 int.to.str$ -- 16
 missing$ -- 0
-newline$ -- 272
-num.names$ -- 281
-pop$ -- 2670
+newline$ -- 286
+num.names$ -- 302
+pop$ -- 2673
 preamble$ -- 1
-purify$ -- 126
+purify$ -- 125
 quote$ -- 0
-skip$ -- 1259
+skip$ -- 1329
 stack$ -- 0
-substring$ -- 9269
-swap$ -- 1068
-text.length$ -- 209
-text.prefix$ -- 0
+substring$ -- 9428
+swap$ -- 1148
+text.length$ -- 239
+text.prefix$ -- 7
 top$ -- 1
-type$ -- 238
+type$ -- 260
 warning$ -- 0
-while$ -- 904
+while$ -- 982
 width$ -- 0
-write$ -- 265
-(There were 2 warnings)
+write$ -- 279
+(There was 1 warning)

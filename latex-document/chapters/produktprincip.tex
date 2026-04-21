@@ -7,97 +7,73 @@
 
 Problemanalysens resultat har ledt os til, at vi ønsker at udvikle et produkt, der kan hjælpe forbrugere med at få en bedre kontrol over deres abonnementer, og derved forbedre deres privatøkonomi.
 
-Formålet med produktet er derfor at skabe et værktøj, som er simpelt og overskueligt, der kan give brugeren indsigt i deres brug af abonnementer. Produktet tager udgangspunkt i at indsamle data om brugerens forbrug af digitale tjenester som er aboonementbasseret og give dem en analyse af deres forbrug, og  analysere hvilke abonnementer der er mest brugt, og hvilke der kan skæres fra for at spare penge. 
+Formålet med produktet er derfor at skabe en løsning eller et værktøj, som er simpelt og overskueligt, der kan give brugeren indsigt i deres brug af abonnementer. Produktet tager udgangspunkt i at indsamle data om brugerens forbrug af digitale tjenester som er aboonementbasseret og give dem en analyse af deres forbrug, og  analysere hvilke abonnementer der er mest brugt, og hvilke der kan skæres fra for at spare penge. 
 
 \subsection{Grundidé}
-TILFØJ FLOWCHART
-
 Produktet skal kunne indsamle data om brugerens forbrug af abonnementer, og give dem en analyse af deres forbrug, og analysere hvilke abonnementer der er mest brugt, og hvilke der kan skæres fra for at spare penge.
 
 - Kunne indsamle data om brugerens forbrug af abonnementrelaterede tjenester (Streaming, Elbil, Telefon, Fitness, osv.)
 
 - Give brugeren en analyse af deres forbrug, og analysere hvilke abonnementer der er mest brugt, og hvilke der kan skæres fra for at spare penge.
 
-- Give brugeren muligheden for at få anbefalet billigere alternativer til deres nuværende abonnementer 
+- Give brugeren muligheden for at få anbefalet billigere alternativer til deres nuværende abonnementer
 
-\subsection{Konkurrenter}
 
 \subsection{Målgruppe}\label{sec:målgruppe}
-TILFØJ EN PERSONA
+\todo[inline]{TILFØJ EN PERSONA}
 
-\textit{Vores målgruppe er primært unge voksne i alderen 20-30 år, som ofte har flere abonnementer såsom streamingtjenester, fitnessmedlemskaber og diverse digitale services. Denne gruppe oplever ofte "subscription fatigue", hvor de mister overblikket over deres abonnementer og ender med at betale for tjenester, de ikke længere bruger eller har brug for.}
-
-
+Vores målgruppe er primært unge voksne i alderen 20-30 år, som ofte har flere abonnementer såsom streamingtjenester, fitnessmedlemskaber og diverse digitale services. Denne gruppe oplever ofte "subscription fatigue", hvor de mister overblikket over deres abonnementer og ender med at betale for tjenester, de ikke længere bruger eller har brug for.
 
 
-\subsection{Brugergrænseflade (UI/UX)}
-En brugergrænseflade (UI\footnote{User Interface}) skal være intuitiv og let at navigere...
 
-\todo[inline]{TILFØJ PAPIR-SKITSER (LOW-FIDELITY PROTOTYPER)}
-\subsubsection{LowFi-Prototyper}
+\subsection{Brainstorm over mulige produktideer}
+For at indsnævre vores produktidé, har vi lavet en brainstorm over mulige løsninger, der kunne hjælpe vores målgruppe med at få bedre kontrol over deres abonnementer.
+\begin{table}[H]
+\centering
+\small
+\label{tab:produktideer}
+\begin{tabularx}{\textwidth}{XXX}
+    \toprule
+    \textbf{Idé} & \textbf{Fordele} & \textbf{Ulemper} \\
+    \midrule
+    Bank-integration (via app)     & Automatiserede betalinger                  & Meget svært at implementere \\
+    Router-overvågning (via app og enhed)   & Data fra alle hjemme-enheder               & Kræver hardware + app udenfor netværk \\
+    Mobilapp (via statistik)             & Bruger mobilens indbyggede statistik       & Kun mobilforbrug synligt \\
+    \bottomrule
+\end{tabularx}
+\caption{Mulige produktidéer – oversigt}
+\end{table} 
 
-I dette afsnit forklarer vi om vores skitse og hvad vores planer er med skitsen. 
+Brainsormen over de mulige produktideer har ført os til tre overordnede: en app med bank-integration, en fysisk enhed som overvåger dataforbrug i hjemmet, og en mobilapp der bruger mobilens indbyggede statistik til at analysere forburg. 
 
-Til at starte med har vi lavet 4 papir skitser, som vi r ved spørgeundersøgelse har fået folk til at svare på, en ab test hvor vi har fået data fra de forskellige målgrupper, da vi prøver at målrette på målgruppen 21+ har vi valgt at fokusere på besvarelserne fra dem der er 21+ 
+For at kunne udvælge det bedste koncept, opstiller vi idésien, hvor vi opstiller kriterier for vores endelige produkt, og vægter dem i forhold til hinanden. Kravene i idésien er vægtet i forhold til deres vigtighed og betydning for produktets succes. Kravene er ligeledes opdelt i funktionelle og ikke-funktionelle(dvs. design) krav.
 
-120 af de 350 der har besvaret vores spørgeundersøgelses A/B test var 21+ ifølge den afkrydsning de har lavet, i spørgeskemaet. 
+\textbf{Funktionelle krav}
+\begin{enumerate}
+    \item Produktet skal kunne indsamle data om brugstid
+    \item Produktet skal kunne vise statisik over brug
+    \item Brugren skal kunne indtaste hvilke apps de har abonnement på
+    \item Produktet skal kunne fortage en analyse af hvilke abonnementer der bruges mindst
+    \item Produktet skal kunne vise grafer og diagrammer over forbruget
+    \item Produktet skal kunne realiseres inden for tidsrammen af projektet 
+\end{enumerate}
+\textbf{Ikke-funktionelle krav}
+\begin{enumerate}
+    \item Produktet skal have en simpel og overskuelig brugergrænseflade
+    \item Produktet skal være tilgængeligt for både iOS og Android
+    \item Produktet skal være let at navigere samt bruges uden instruksioner
+\end{enumerate}
+\vspace{2.5cm}
+Vi indsætter nu både de funktionelle og de ikke-funktionelle krav i en kravmatrix, hvor vi vægter dem i forhold til hinanden.
 
+
+Resultatet fra idésien viser os, at vores idéer alle sammen har potentialet for at have udmundet i gode produkter, men ved især punktet »Produktet skal kunne realiseres inden for tidsrammen af projektet« skiller bank-integrationsidéen sig ud, da vi vurderer, med vores programmerings-, software og teknologierfaring, at det vil være et meget omfattende projekt at integrere med bankernes systemer og sikkerhedskrav. Vi kigger derfor mere på de to andre idéer, en router overvågningsenhed og en mobilapp.
 \begin{figure}[H]
     \centering
-    \fbox{\includegraphics[width=0.5\textwidth, angle=90]{assets/lowfi_skitse_1.jpg}}
-    \caption{LowFi skitse 1}
+    \includegraphics[width=1\textwidth]{assets/excel_20_update.png}
+    \caption{Skærmbillede af idésien i Excel}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=0.5\textwidth, angle=90]{assets/lowfi_skitse_2.jpg}}
-    \caption{LowFi skitse 2}
-\end{figure}
+Vi forstiller os, at router-overvågningsenheden skulle være en fysisk enhed, som tilsluttes en famillies hjemmenetværk, og derved indsamler data om alle enheder der er tilsluttet netværket. Det vil sige, at man vil kunne indsamle data om forbrug på enheder som eksempeltvis smart-tv, computere og lignende devices (uddover mobiltelefoner). Denne har fordelen at kunne indsamle data om forbrug på andre enheder i hjemmet, hvorimod mobilappen kun ville kunne indsamle data om mobiltelefonens forbrug.
 
-\begin{figure}[H]
-    \centering
-    \fbox{\includegraphics[width=0.5\textwidth, angle=90]{assets/lowfi_skitse_3.jpg}}
-    \caption{LowFi skitse 3}
-\end{figure}
-
-Skitse 1: 23\% af besvarende valgte denne som deres foretrukne layout 
-
-Skitse 2: 18\% af besvarende fortrækker dette layout 
-
-Skitse 3: 20\% foretrak dette layout 
-
-Skitse 4 39\% fortrak dette layout 
-
-Ud fra den Data har vi valgt at fremstille en professionel skitse over layout med udgangspunkt fra skitse 4, da størstedelen af vores målgruppe valgte den 
-
-Vi har lavet en endelig produktskitse ved brug af Frame0, som er et skitseringsprogram til software og Gui. 
-
-Formålet med vores software er at skabe en komfortable brugeroplevelse med mindst mulig støj og hurtigere resultater, vi har fokus på at du ikke skal være på appen i for lang tid, men bruge den som et værktøj i din hverdag, lidt ligesom en tommestok du kun bruger når du skal måle ting op. 
-
-Der er fokus på der er en klar og tydelig brugerflade der fortæller dig præcist hvor du kan behandle dine abonnementer samt give dig svar på ting du søger efter, samt en profilside hvor du skal kunne logge ind og ud. 
-
-Vi går primært efter en ældre (21+ ) målgruppe med vores userinterface, da børn og unge ikke har det samme økonomiske problemer som nye voksne mennesker har. 
-
-Vores interface skal også have muligheden for at vise diagrammer, og statistikker, som skal gøre det nemmere for brugeren at visualisere sit forbrug samt alternativer, for at give et let og overskueligt overblik. 
-
-Vores indkomst fra appen kommer fra at hvis du vil have en detaljeret analyse, som bedre alternativer på dit midlertidige abonnement, har vi tænkt os at anvende OTP (One time purchases) for at give brugeren adgang til de mere eksklusive funktioner. 
-
-Dette One Time purchase kan bestilles hver gang du vil have opdateret din analyse for at gøre det så nemt for dig som muligt, samt dato på dine tidlige r dig som muligt, samt dato på dine tidligere analyser som du også kan tilgå, så du har styr på hvornår du har fået lavet den og hvor relevant den er, denne funktion kan også give os muligheden for at analysere hvor meget du har sparet på at anvende vores ap re analyser som du også kan tilgå, så du har styr på hvornår du har fået lavet den og hvor relevant den er, denne funktion kan også give os muligheden for at analysere hvor meget du har sparet på at anvende vores app hvilket bygger Troværdighed med kunden. 
-
-\subsubsection{Digital produktskitse}
-\textit{I det her afsnit forklarer vi om vores skitse og hvad vores planer er med skitsen.}
- 
-Vi har lavet en produktskitse ved brug af Frame0, som er et skitseringsprogram til software og Gui. 
-
-Formålet med vores software er at skabe en komfortable brugeroplevelse med mindst mulig støj og hurtigere resultater, vi har fokus på at du ikke skal være på appen i for lang tid, men bruge den som et værktøj i din hverdag, lidt ligesom en tommestok du kun bruger når du skal måle ting op. 
-
-Der er fokus på der er en klar og tydelig brugerflade der fortæller dig præcist hvor du kan behandle dine abonnementer samt give dig svar på ting du søger efter, samt en profilside hvor du skal kunne logge ind og ud. 
-
-Vi går primært efter en ældre (21+) målgruppe med vores userinterface, da børn og unge ikke har det samme økonomiske problemer som nye voksne mennesker har. (\ref{sec:målgruppe})
-
-Vores interface skal også have muligheden for at vise diagrammer, og statistikker, som skal gøre det nemmere for brugeren at visualisere sit forbrug samt alternativer, for at give et let og overskueligt overblik. 
-
-Vores indkomst fra appen kommer fra at hvis du vil have en detaljeret analyse, som bedre alternativer på dit midlertidige abonnement, har vi tænkt os at anvende OTP (One time purchases) for at give brugeren adgang til de mere eksklusive funktioner. 
-
-Dette One Time purchase kan bestilles hver gang du vil have opdateret din analyse for at gøre det så nemt for dig som muligt, samt dato på dine tidligere analyser som du også kan tilgå, så du har styr på hvornår du har fået lavet den og hvor relevant den er, denne funktion kan også give os muligheden for at analysere hvor meget du har sparet på at anvende vores app hvilket bygger Troværdighed med kunden. 
-
+Vores endelige valg af vores endelige produktkoncept landede på mobilappen, både fordi den scorede klart højest point i idésien, men også fordi vi vurdere det som det best realistiske produkt at udvikle, da det ikke kræver udvikling af fysisk hardware, og det er en teknologi vi har erfaring med at udvikle.
